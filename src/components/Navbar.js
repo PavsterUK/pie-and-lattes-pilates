@@ -8,8 +8,6 @@ const Navbar = () => {
             <li><a href="">Home</a></li>
             <li><a href="">About Me</a></li>
             <li><a href="">schedule</a></li>
-            <image scr={main_logo}/>
-            
             <li><a href="">courses</a></li>
             <li><a href="">classes</a></li>
             <li><a href="">Contact us</a></li>

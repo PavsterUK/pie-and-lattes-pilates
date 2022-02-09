@@ -11,8 +11,10 @@
     list-style: none;
     font-size: 1em;
     margin: 0;
-    border: 1px solid red;
-    padding: 1rem;
+    padding: .1em;
+    background-color: #00262f;
+    
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -26,10 +28,11 @@
 li {
     padding: 2vw;
     
+    
 }
 
 a {
-    color: #000000;
+    color: antiquewhite;
     text-decoration: none;
     text-transform: uppercase;
 }
