@@ -1,0 +1,15 @@
+.container {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 1em;
+    background-color: RGB(0, 38, 47);
+    border-radius: 10px;
+    color: aliceblue;
+    text-transform: uppercase;
+    line-height: 3em;;
+}
