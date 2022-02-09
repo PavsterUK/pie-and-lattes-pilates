@@ -1,5 +1,4 @@
 
-import Header from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 
 function App() {

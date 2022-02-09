@@ -8,7 +8,7 @@ const LandingPage = () => {
     return <div className = { styles.container } >
         <section className = { styles.top_section } >
         <Navbar/>
-        <img src = { images } >
+        <img src = { images }  alt="logo">
         </img> <Card className = { styles.message } >
         <h4 > Website is being developed and will be coming soon!!!
         <br/>
