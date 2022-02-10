@@ -18,7 +18,7 @@ const LandingPage = () => {
         <br/>
         Mobile: +447884788700 
         <br/>
-        Email: pienadlattesstudio @gmail.com
+        Email: pieandlattesstudio@gmail.com
         <br/>
         Thank you and see you soon!!!
         </h4>
