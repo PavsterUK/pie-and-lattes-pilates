@@ -1,10 +1,7 @@
 .container {
     height: 100vh;
-    background-color: #fbd6ce;
+    background-color: #fdfaf6;
 }
 
 .top_section {}
 
-.top_section img {
-    margin-top: -10vw;
-}
