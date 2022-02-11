@@ -1,7 +1,10 @@
 .container {
+    padding-top: 6em;
     height: 100vh;
     background-color: #fdfaf6;
 }
 
-.top_section {}
+.top_section {
+    
+}
 
