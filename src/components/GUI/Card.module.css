@@ -1,15 +1,14 @@
 .container {
-    position: fixed;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
+    width: 30vw;
     height: fit-content;
-    text-align: center;
-    padding: 1em;
-    background-color: RGB(0, 38, 47);
     border-radius: 10px;
-    color: aliceblue;
-    text-transform: uppercase;
-    line-height: 3em;;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    border: 1px solid grey;
+    background-color: rgba(240, 248, 255, 0.233);
+    
 }
+
