@@ -4,8 +4,9 @@
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #064420;
+    
 }
 
 
@@ -67,6 +68,5 @@ a {
 .logo_title img {
     margin: 0;
     height: 100%;
-    margin-left: 3em;
     height: 6em;
 }

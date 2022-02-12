@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
+import Card from "./GUI/Card";
 
-import styles from "./Welcome.module.css"
+import styles from "./Welcome.module.css";
 
 const Welcome = () => {
-    return (
-        <div className={styles.container}>
-            <h1>Welcome</h1>
-        </div>
-    )
-}
+  return (
+    <div className={styles.container}>
+      <div className={styles.slogan1}><p>Transform, renew, revitalize. </p></div>
+      <div className={styles.slogan2}><p>Live in a body you love. Love the body you're in. </p></div>
+      <div className={styles.slogan2}><p>Exercise smarter, not harder. </p></div>
 
-export default Welcome
+
+    </div>
+  );
+};
+
+export default Welcome;
