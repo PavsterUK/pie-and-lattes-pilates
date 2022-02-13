@@ -1,18 +1,41 @@
 .container {
-    width: 100%;
-    height: 100vh;
-    border: 1px solid red;
-    background-image: url(../images/kike-vega-F2qh3yjz6Jk-unsplash40.jpg);
-    background-position: 30% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Audiowide', cursive;
-    font-size: 3.5em;;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/kike-vega-F2qh3yjz6Jk-unsplash40.jpg);
+  background-size: cover;
+  background-position: 10% 100%;;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-.container p {
-    color: white;
+.greeter {
+  margin-top: 3em;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  padding: 1em;
+  border-radius: 5px;
+  color: aliceblue;
 }
+
+.greeter h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  font-family: 'EB Garamond', serif;
+}
+
+.greeter p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+
+
+
+

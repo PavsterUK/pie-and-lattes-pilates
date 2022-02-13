@@ -6,11 +6,10 @@ import styles from "./Welcome.module.css";
 const Welcome = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.slogan1}><p>Transform, renew, revitalize. </p></div>
-      <div className={styles.slogan2}><p>Live in a body you love. Love the body you're in. </p></div>
-      <div className={styles.slogan2}><p>Exercise smarter, not harder. </p></div>
-
-
+      <div className={styles.greeter}>
+        <h1>Welcome to keynsham Reformer pilates </h1>
+        <p>Feel stronger, build tone &#38; boost your energy</p>
+      </div>
     </div>
   );
 };
