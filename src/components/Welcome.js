@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./GUI/Card";
 
 import styles from "./Welcome.module.css";
 
@@ -8,7 +7,10 @@ const Welcome = () => {
     <div className={styles.container}>
       <div className={styles.greeter}>
         <h1>Welcome to keynsham Reformer pilates </h1>
-        <p>Feel stronger, build tone &#38; boost your energy</p>
+        <p>
+          Train your body as an integrated whole, focusing on core, lower body,
+          and upper body strength as well as flexibility and posture.
+        </p>
       </div>
     </div>
   );
