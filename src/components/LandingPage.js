@@ -1,20 +1,18 @@
-import React from 'react';
-import images from "../images/logo.svg"
-import Card from './GUI/Card';
+import React from "react";
+import About from "./About";
 import styles from "./LandingPage.module.css";
-import Navbar from './Navbar';
-import Welcome from './Welcome';
+import Navbar from "./Navigation/Navbar";
+import Welcome from "./Welcome";
 
 const LandingPage = () => {
-  return <div className={styles.container} >
-    <section className={styles.top_section} >
+  return (
+    <div className={styles.container}>
       <Navbar />
       <Welcome />
-    </section>
+      
 
-
-
-  </div>;
+    </div>
+  );
 };
 
 export default LandingPage;

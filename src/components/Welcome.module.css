@@ -1,15 +1,11 @@
 .container {
   width: 100vw;
-  height: 140%;
+  height: 100vh;
   max-width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  background-image: url(../images/kike-vega-F2qh3yjz6Jk-unsplash40.jpg);
-  background-size: cover;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
   padding: 0;
 }
 
@@ -76,6 +72,38 @@
 .button button:hover {
   background-color: #f3f3f36e;
 }
+
+.button:active {
+  transition: all 5ms;
+  transform: scale(.8);
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+  .greeter {
+    margin-top: 5em;
+    padding: 0;
+  }
+
+  .greeter h1 {
+    font-size: 2em;
+  }
+
+  .greeter p {
+    font-size: 1.3em;
+    width: 80%;
+  }
+
+  .button button {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    font-size: 1em;
+  }
+  
+}
+
+
+/* Animations */
 
 @keyframes myAnim {
   0% {

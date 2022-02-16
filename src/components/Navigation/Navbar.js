@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from "../images/svg.svg";
-import styles from "../components/Navbar.module.css"
+import logo from "../../images/svg.svg";
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
     return <div className={styles.container}>
