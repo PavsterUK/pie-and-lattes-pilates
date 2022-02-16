@@ -28,20 +28,14 @@ li:hover {
 }
 
 a {
+  font-size: 1em;
   color: #faf1e6;
   text-decoration: none;
   text-transform: uppercase;
   font-family: Lato;
   font-weight: bold;
-  /* font-family: 'Architects Daughter', cursive; */
 }
 
-@media only screen and (max-width: 800px) {
-  .main_nav {
-    font-size: 0.3em;
-    padding: 0;
-  }
-}
 
 .logo_title {
   display: flex;
@@ -67,3 +61,26 @@ a {
   height: 4em;
 }
 
+
+/* Media queries */
+
+@media only screen and (max-width: 800px) {
+  .main_nav {
+    font-size: .5em;
+    padding: 0;
+  }
+
+  .logo_title p {
+    font-size: .6em;
+  }
+
+  li {
+    margin-left: .1em;
+    padding: 1em;
+  }
+
+  a {
+    font-size: 1.3em;
+  }
+
+}
