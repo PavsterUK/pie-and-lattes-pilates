@@ -1,11 +1,10 @@
 .container {
-  width: fit-content;
-  height: fit-content;
+  width: 70vw;
   border-radius:5px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   background-color: rgba(240, 248, 255, 0.233);
   margin-top: 2em;
-  padding: 0;
+  padding: 1em;
 }
