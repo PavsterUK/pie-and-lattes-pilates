@@ -7,7 +7,7 @@ const About = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <h1>WELCOME TO PIE LATTES</h1>
+        <h1>WELCOME TO PIE&amp;LATTES</h1>
         <h2>REFORMER PILATES STUDIO IN KEYNSHAM.</h2>
         <p>
           We offer one-to-one and group Reformer Pilates classes in our
@@ -24,6 +24,7 @@ const About = () => {
           left impact; - Pelvic floor issues; - Posture alignment, scoliosis and
           many others.
         </p>
+        <hr />
 
         <h1>
           What is Pilates? <br />
@@ -44,6 +45,7 @@ const About = () => {
           and decompressed spine and joints, robust circulation, and the trinity
           of body/mind/spirit.
         </p>
+        <hr />
 
         <h1>What is Reformer?</h1>
         <p>
@@ -57,6 +59,28 @@ const About = () => {
           on the Reformer – more exercises than he designed for any other piece
           of Pilates Equipment. “ *Everything you need to know about Pilates{" "}
         </p>
+        <hr />
+
+        <h1>About Me</h1>
+        <p>
+          Hi, my name is Kotryna and I am a classically trained Pilates teacher
+          living in Bristol. Pilates was always my happy place. After long hours
+          in front of the computer, while studying Law and working for the busy
+          global antipiracy company, Pilates was the only thing that would help
+          me to regain my body and calm my mind. I have been practicing Pilates
+          myself since 2006 and already happily reaching my first decade of
+          teaching. I have completed The Pilates Center Advanced Teacher
+          training program, which is also known as the “Harvard of Pilates” in
+          2015 in London. I have continued my Pilates education working with
+          master teachers Debora Kolwey, Rachel Taylor Segel and Amy Taylor
+          Alpers. Having the interest to adapt Pilates to children led me to the
+          Polestar Pilates course - Pilates for Juniors. Life is all about
+          balance. So it is important to have some Pie and Lattes, but also some
+          Pilates. Come and join me for fun, vigorous classes, where you can
+          connect your mind and body, improve your balance, flexibility,
+          muscular tone. Become healthier happier, and stronger.
+        </p>
+        <hr/>
       </div>
     </Card>
   );
