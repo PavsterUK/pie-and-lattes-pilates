@@ -11,9 +11,7 @@ const Welcome = () => {
           Train your body as an integrated whole, focusing on core, lower body,
           and upper body strength as well as flexibility and posture.
         </p>
-        <div className={styles.button}>
-          <button>Book now &#x27A4;</button>
-        </div>
+          <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759">Book now &#x27A4;</a>
       </div>
     </div>
   );

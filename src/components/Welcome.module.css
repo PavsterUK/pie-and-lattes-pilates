@@ -46,7 +46,8 @@
   animation-delay: 1s;
 }
 
-.button button {
+.greeter a {
+  text-decoration: none;
   border: none;
   padding: 0.5em 1.5em 0.5em 1.5em;
   margin-top: 3em;
@@ -57,8 +58,9 @@
   letter-spacing: 0.1em;
   text-transform: capitalize;
   background-color: #74769b5b;
-  /* background-color: #0c6431; */
   color: #faf1e6;
+  -webkit-box-shadow: 5px 6px 3px -2px #000000;
+  box-shadow: 5px 6px 3px -2px #000000;
 
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -69,15 +71,13 @@
   animation-delay: 2s;
 }
 
-.button button:hover {
+.greeter a:hover {
   background-color: #f3f3f36e;
 }
 
-.button:active {
-  transition: all 5ms;
-  transform: scale(.8);
+.greeter a:active {
+  font-size: 1.4em;
 }
-
 
 /* Media Queries */
 @media only screen and (max-width: 800px) {
@@ -95,13 +95,17 @@
     width: 80%;
   }
 
-  .button button {
+  .greeter a {
     padding: 0.5em 1.5em 0.5em 1.5em;
     font-size: 1em;
   }
+
+  .greeter a:active {
+    font-size: .9em;
+  }
+
   
 }
-
 
 /* Animations */
 
@@ -141,4 +145,3 @@
     transform: none;
   }
 }
-

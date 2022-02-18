@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Source+Serif+Pro&display=swap");
 
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-
+html {
+  background-image: url(./images/kike-vega-F2qh3yjz6Jk-unsplash40.jpg);
+  background-size: cover;
+  background-position: 50% 100%;
+}

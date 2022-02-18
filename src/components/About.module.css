@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+}
 
+.container hr {
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    border: none;
 }

@@ -19,39 +19,82 @@ const Pricing = () => {
 
         <ul className={styles.price_list}>
           <li>
-            <a>Starter Pack<br/><br/>£75</a>
+            <a href="https://buy.stripe.com/8wM6pm9993Iu6ek145">
+              Taster Session
+              <br />
+              <br />
+              £25
+            </a>
+          </li>
+          <li>
+            <a href="https://buy.stripe.com/fZe296fxxfrc1Y4eV4">
+              Starter Pack
+              <br />
+              <br />
+              £75
+            </a>
           </li>
 
           <li>
-            <a>1 off Private Session <br/><br/> £51</a>
+            <a href="https://buy.stripe.com/8wMeVSadd1AmbyEaEG">
+              1 off Private Session <br />
+              <br /> £51
+            </a>
           </li>
 
           <li>
-            <a>5 Private Sessions <br/><br/> £245</a>
+            <a href="https://buy.stripe.com/5kA1523OPbaWdGM6or">
+              5 Private Sessions <br />
+              <br /> £245
+            </a>
           </li>
 
           <li>
-            <a>10 Private Sessions <br/><br/>£470</a>
+            <a href="https://buy.stripe.com/5kA4hefxxbaW1Y47sw">
+              10 Private Sessions <br />
+              <br />
+              £470
+            </a>
           </li>
 
           <li>
-            <a>1 off Duet Session<br/><br/> £64</a>
+            <a href="https://buy.stripe.com/bIY5libhhcf01Y4fZ3">
+              1 off Duet Session
+              <br />
+              <br /> £64
+            </a>
           </li>
 
           <li>
-            <a>5 Duet Sessions <br/><br/>£310</a>
+            <a href="https://buy.stripe.com/dR6dROfxxfrcgSYbIO">
+              5 Duet Sessions <br />
+              <br />
+              £310
+            </a>
           </li>
 
           <li>
-            <a>10 Duet Sessions <br/><br/>£600</a>
+            <a href="https://buy.stripe.com/5kA9By1GHfrc1Y46ov">
+              10 Duet Sessions <br />
+              <br />
+              £600
+            </a>
           </li>
 
           <li>
-            <a>5 Group classes<br/><br/> £90</a>
+            <a href="https://buy.stripe.com/dR64he7115QC1Y4dQY">
+              5 Group classes
+              <br />
+              <br /> £90
+            </a>
           </li>
 
           <li>
-            <a>10 Group classes <br/><br/>£170</a>
+            <a href="https://buy.stripe.com/eVa7tq7117YKgSYfZ7">
+              10 Group classes <br />
+              <br />
+              £170
+            </a>
           </li>
         </ul>
       </div>
