@@ -7,7 +7,9 @@ const Pricing = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <h1>Pricing</h1>
+        <h1>Sessions &amp; Prices</h1>
+
+        
         <h3>
           We recommend you start with a 55-minute Taster session to see how
           Pilates with us can help you achieve your goals. After your Taster
@@ -16,6 +18,9 @@ const Pricing = () => {
           special price. You are also welcome to join Group Reformer sessions or
           One-to-One/Duet sessions as soon as you had your introductory session.
         </h3>
+
+        
+        
 
         <ul className={styles.price_list}>
           <li>

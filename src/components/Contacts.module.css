@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+}
+
+.meet_us {
+  text-align: center;
+}
+
+iframe {
+  border-radius: 5px;
+  border: 0;
+}

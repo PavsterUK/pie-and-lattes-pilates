@@ -6,34 +6,30 @@ const Navbar = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.logo_title}>
-        <img src={logo} />
+        <img src={logo} alt="logo" />
         <p>LIVE IN A BODY YOU LOVE. LOVE THE BODY YOU'RE IN. </p>
       </div>
       <ul className={styles.main_nav}>
         <li>
-          <a href={() => false}>&mdash;</a>
+          <p>&mdash;</p>
         </li>
         <li>
-          <a onClick={props.setIsHome} href="#">Home</a>
+          <button onClick={props.setIsHome}>Home</button>
         </li>
         <li>
-          <a onClick={props.setIsAbout} href="#">
-            About
-          </a>
+          <button onClick={props.setIsWhatsPilates}>What's pilates?</button>
         </li>
         <li>
-          <a href={() => false}>classes</a>
+          <button onClick={props.setIsPricing}>pricing</button>
         </li>
         <li>
-          <a href={() => false}>timetable</a>
+          <button onClick={props.setIsAboutMe}> About me</button>
         </li>
         <li>
-          <a onClick={props.setIsPricing} href="#">
-            pricing
-          </a>
+          <button onClick={props.setIsContacts}>contacts</button>
         </li>
         <li>
-          <a href={() => false}>&mdash;</a>
+          <p>&mdash;</p>
         </li>
       </ul>
     </div>
