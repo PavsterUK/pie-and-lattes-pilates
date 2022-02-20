@@ -9,10 +9,10 @@ const Footer = () => {
     <div className={styles.container}>
       <div>
         <a href="https://www.instagram.com/pienadlattes_pilates_studio/" className={styles.instagram}>
-          <img src={instagram}></img>
+          <img src={instagram} alt="instagram"></img>
         </a>
         <a href="https://www.facebook.com/PieandLattesPilatesStudio/" className={styles.facebook}> 
-          <img src={facebook}></img>
+          <img src={facebook} alt="facebook"></img>
         </a>
       </div>
     </div>

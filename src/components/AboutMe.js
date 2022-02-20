@@ -28,7 +28,7 @@ const AboutMe = () => {
           connect your mind and body, improve your balance, flexibility,
           muscular tone. Become healthier happier, and stronger.
         </h3>
-        <img src={myPhoto} ></img>
+        <img src={myPhoto} alt="me" ></img>
         
       </div>
     </Card>

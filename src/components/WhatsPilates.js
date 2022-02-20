@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <img src={funny}/>
+        <img src={funny} alt="funny"/>
         <h1>
           What is Pilates? <br />
         </h1>
@@ -32,7 +32,7 @@ const About = () => {
         <hr />
 
         <h1>What is Reformer?</h1>
-        <img src={reformer}/>
+        <img src={reformer} alt="reformer"/>
         <h3>
           “The Reformer is the most widely known piece of Pilates equipment and
           is an amazingly versatile apparatus. The Universal Reformer’s unique
