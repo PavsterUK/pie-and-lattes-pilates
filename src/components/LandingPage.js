@@ -1,46 +1,77 @@
 import React, { useState } from "react";
-import About from "./About";
+import WhatsPilates from "./WhatsPilates";
+import Contacts from "./Contacts";
+import Footer from "./Footer";
 import styles from "./LandingPage.module.css";
 import Navbar from "./Navigation/Navbar";
 import Pricing from "./Pricing";
 import Welcome from "./Welcome";
+import AboutMe from "./AboutMe";
 
 const LandingPage = () => {
-  const [isNavbar, setIsNavbar] = useState(true);
   const [isWelcome, setisWelcome] = useState(true);
-  const [isAbout, setIsAbout] = useState(false);
+  const [isWhatsPilates, setIsWhatsPilates] = useState(false);
   const [isPricing, setIsPricing] = useState(false);
+  const [isContacts, setIsContacts] = useState(false);
+  const [isAboutMe, setIsAboutMe] = useState(false);
 
-  const setIsAboutHandler = () => {
+  const setIsWhatsPilatesHandler = () => {
     setisWelcome(false);
     setIsPricing(false);
-    setIsAbout(true);
+    setIsContacts(false);
+    setIsAboutMe(false);
+    setIsWhatsPilates(true);
   };
 
   const setIsPricingHandler = () => {
     setisWelcome(false);
-    setIsAbout(false);
+    setIsWhatsPilates(false);
+    setIsContacts(false);
+    setIsAboutMe(false);
     setIsPricing(true);
   };
 
   const setIsHomeHandler = () => {
-    setIsAbout(false);
+    setIsWhatsPilates(false);
     setIsPricing(false);
+    setIsContacts(false);
+    setIsAboutMe(false);
     setisWelcome(true);
   };
 
+  const setIsContactsHandler = () => {
+    setIsWhatsPilates(false);
+    setIsPricing(false);
+    setisWelcome(false);
+    setIsAboutMe(false);
+    setIsContacts(true);
+  }
+
+  const setIsAboutMeHandler = () => {
+    setIsWhatsPilates(false);
+    setIsPricing(false);
+    setisWelcome(false);
+    setIsContacts(false);
+    setIsAboutMe(true);
+  }
+
   return (
     <div className={styles.container}>
-      {isNavbar && (
-        <Navbar
-          setIsHome={setIsHomeHandler}
-          setIsAbout={setIsAboutHandler}
-          setIsPricing={setIsPricingHandler}
-        />
-      )}
+      <Navbar
+        setIsHome={setIsHomeHandler}
+        setIsWhatsPilates={setIsWhatsPilatesHandler}
+        setIsPricing={setIsPricingHandler}
+        setIsContacts={setIsContactsHandler}
+        setIsAboutMe={setIsAboutMeHandler}
+      />
+
       {isWelcome && <Welcome />}
-      {isAbout && <About />}
+      {isWhatsPilates && <WhatsPilates/>}
       {isPricing && <Pricing />}
+      {isContacts && <Contacts/>}
+      {isAboutMe && <AboutMe/>}
+
+      <Footer />
     </div>
   );
 };
