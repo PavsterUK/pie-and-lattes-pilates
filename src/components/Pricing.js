@@ -12,10 +12,10 @@ const Pricing = () => {
         
         <h3>
           We recommend you start with a 55-minute Taster session to see how
-          Pilates with us can help you achieve your goals. After your Taster
+          Pilates with us can help you achieve your goals.<br/><br/> After your Taster
           session, you are welcome to use our promotion for first-time clients
           and purchase a Starter Pack which includes two more privates at a
-          special price. You are also welcome to join Group Reformer sessions or
+          special price. <br/><br/>You are also welcome to join Group Reformer sessions or
           One-to-One/Duet sessions as soon as you had your introductory session.
         </h3>
 
