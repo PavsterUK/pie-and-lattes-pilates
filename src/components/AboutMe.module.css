@@ -1,19 +1,27 @@
 .container {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 1em;
 }
 
 .container hr {
-    height: 1px;
-    width: 80%;
-    background-color: black;
-    border: none;
+  height: 1px;
+  width: 80%;
+  background-color: black;
+  border: none;
 }
 
 .container img {
-    width: 100%;
+  width: 100%;
+}
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100vw;
+  }
 }

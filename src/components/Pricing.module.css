@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  font-family: Lato;
+  
 }
 
 .container p {
@@ -12,7 +13,7 @@
 }
 
 .container h3 {
-  width: 50%;
+  width: 80%;
 }
 
 .container li {
@@ -36,8 +37,8 @@
   color: #faf1e6;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Lato;
   font-weight: bold;
+  text-align: center;
 }
 
 .container li:hover {
@@ -49,4 +50,25 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100vw;
+  }
+  .container ul li a {
+   padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container li {
+    width: 100%;
+  }
+
+  .price_list {
+    padding-left: 0;
+  }
 }

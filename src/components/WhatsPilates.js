@@ -9,7 +9,6 @@ const About = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <img src={funny} alt="funny"/>
         <h1>
           What is Pilates? <br />
         </h1>
@@ -45,6 +44,7 @@ const About = () => {
           of Pilates Equipment. “ *Everything you need to know about Pilates{" "}
         </h3>
         <hr />
+        <img src={funny} alt="funny"/>
       </div>
     </Card>
   );

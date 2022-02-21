@@ -5,9 +5,9 @@ import Card from "./GUI/Card";
 
 const Contacts = () => {
   return (
-    <div className={styles.container}>
+    
       <Card>
-        <div className={styles.meet_us}>
+        <div className={styles.container}>
           <h1>Contact Us</h1>
           <hr />
           <br />
@@ -26,7 +26,6 @@ const Contacts = () => {
           ></iframe>
         </div>
       </Card>
-    </div>
   );
 };
 
