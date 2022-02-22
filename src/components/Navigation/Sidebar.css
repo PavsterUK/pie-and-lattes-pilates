@@ -36,11 +36,13 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  position: absolute;
+  left: 1.5em;
+  top: 1em;
+  width: 3em;
+  height: 2.5em;
+  /* left: 36px;
+  top: 36px; */
 }
 @media only screen and (min-width: 1000px) {
   .bm-burger-button {

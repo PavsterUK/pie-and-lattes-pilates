@@ -13,7 +13,7 @@ import Header from "./Header";
 import "./Navigation/Sidebar.css";
 
 const LandingPage = () => {
-  const [isWelcome, setisWelcome] = useState(false);
+  const [isWelcome, setisWelcome] = useState(true);
   const [isWhatsPilates, setIsWhatsPilates] = useState(false);
   const [isPricing, setIsPricing] = useState(false);
   const [isContacts, setIsContacts] = useState(false);
