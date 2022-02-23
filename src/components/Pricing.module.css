@@ -19,7 +19,7 @@
 .container li {
   padding: 0;
   margin: 1em;
-  width: fit-content;
+  width:fit-content;
   list-style-type: none;
   background-color: #064420;
   margin-top: 1em;

@@ -60,9 +60,15 @@ const LandingPage = () => {
   };
 
   return (
-    <div id="outer-container" className={styles.container}>
+    <div className={styles.container}>
       <Header />
-      <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
+      <Sidebar
+        setIsHome={setIsHomeHandler}
+        setIsWhatsPilates={setIsWhatsPilatesHandler}
+        setIsPricing={setIsPricingHandler}
+        setIsContacts={setIsContactsHandler}
+        setIsAboutMe={setIsAboutMeHandler}
+      />
 
       <Navbar
         setIsHome={setIsHomeHandler}
@@ -77,7 +83,6 @@ const LandingPage = () => {
       {isPricing && <Pricing />}
       {isContacts && <Contacts />}
       {isAboutMe && <AboutMe />}
-      <div id="page-wrap"></div>
       <Footer />
     </div>
   );

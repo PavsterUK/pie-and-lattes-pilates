@@ -1,13 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import { bubble as Menu } from 'react-burger-menu';
 
 const Sidebar = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const setIsHomeHandler = () => {
+    props.setIsHome();
+    setIsOpen(false);
+  }
+
   return (
-    <Menu right width={ '80%' } left {...props}>
+    <Menu isOpen={ isOpen } right width={ '80%' } left {...props}>
+  
         <ul >
         <li>
-          <button onClick={props.setIsHome}>Home</button>
+          <button onClick={setIsHomeHandler}>Home</button>
         </li>
         <li>
           <button onClick={props.setIsWhatsPilates}>What's pilates?</button>
