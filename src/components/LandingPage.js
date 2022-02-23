@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import WhatsPilates from "./WhatsPilates";
 import Contacts from "./Contacts";
 import Footer from "./Footer";
@@ -7,6 +8,9 @@ import Navbar from "./Navigation/Navbar";
 import Pricing from "./Pricing";
 import Welcome from "./Welcome";
 import AboutMe from "./AboutMe";
+import Sidebar from "./Navigation/Sidebar";
+import Header from "./Header";
+import "./Navigation/Sidebar.css";
 
 const LandingPage = () => {
   const [isWelcome, setisWelcome] = useState(true);
@@ -45,7 +49,7 @@ const LandingPage = () => {
     setisWelcome(false);
     setIsAboutMe(false);
     setIsContacts(true);
-  }
+  };
 
   const setIsAboutMeHandler = () => {
     setIsWhatsPilates(false);
@@ -53,10 +57,19 @@ const LandingPage = () => {
     setisWelcome(false);
     setIsContacts(false);
     setIsAboutMe(true);
-  }
+  };
 
   return (
     <div className={styles.container}>
+      <Header />
+      <Sidebar
+        setIsHome={setIsHomeHandler}
+        setIsWhatsPilates={setIsWhatsPilatesHandler}
+        setIsPricing={setIsPricingHandler}
+        setIsContacts={setIsContactsHandler}
+        setIsAboutMe={setIsAboutMeHandler}
+      />
+
       <Navbar
         setIsHome={setIsHomeHandler}
         setIsWhatsPilates={setIsWhatsPilatesHandler}
@@ -66,11 +79,10 @@ const LandingPage = () => {
       />
 
       {isWelcome && <Welcome />}
-      {isWhatsPilates && <WhatsPilates/>}
+      {isWhatsPilates && <WhatsPilates />}
       {isPricing && <Pricing />}
-      {isContacts && <Contacts/>}
-      {isAboutMe && <AboutMe/>}
-
+      {isContacts && <Contacts />}
+      {isAboutMe && <AboutMe />}
       <Footer />
     </div>
   );

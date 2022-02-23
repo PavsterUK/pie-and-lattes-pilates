@@ -12,9 +12,7 @@ const About = () => {
         <h1>
           What is Pilates? <br />
         </h1>
-        <h2>
-          /pɪˈlɑːtiːz/ <br /> Noun: Pilates
-        </h2>
+        
         <h3>
           A system of exercises using special apparatus, designed to improve
           physical strength, flexibility, and posture, and enhance mental
@@ -31,7 +29,7 @@ const About = () => {
         <hr />
 
         <h1>What is Reformer?</h1>
-        <img src={reformer} alt="reformer"/>
+        
         <h3>
           “The Reformer is the most widely known piece of Pilates equipment and
           is an amazingly versatile apparatus. The Universal Reformer’s unique
@@ -43,6 +41,8 @@ const About = () => {
           on the Reformer – more exercises than he designed for any other piece
           of Pilates Equipment. “ *Everything you need to know about Pilates{" "}
         </h3>
+
+        <img src={reformer} alt="reformer"/>
         <hr />
         <img src={funny} alt="funny"/>
       </div>
