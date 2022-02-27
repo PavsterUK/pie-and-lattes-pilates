@@ -1,8 +1,8 @@
 import React from 'react'
 
 import styles from "./AboutMe.module.css"
-import Card from './GUI/Card'
-import myPhoto from "../images/me.jpg"
+import Card from '../GUI/Card'
+import myPhoto from "../../images/me.jpg"
 
 const AboutMe = () => {
   return (

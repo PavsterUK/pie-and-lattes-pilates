@@ -12,7 +12,7 @@ const Navbar = (props) => {
           <button onClick={props.setIsHome}>Home</button>
         </li>
         <li>
-          <button onClick={props.setIsWhatsPilates}>What's pilates?</button>
+          <button onClick={props.setIsWhatsReformer}>What's Reformer?</button>
         </li>
         <li>
           <button onClick={props.setIsPricing}>pricing</button>

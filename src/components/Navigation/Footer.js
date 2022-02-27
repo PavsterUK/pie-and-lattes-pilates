@@ -1,7 +1,7 @@
 import React from "react";
 
-import instagram from "../images/instagram.svg";
-import facebook from "../images/facebook.svg";
+import instagram from "../../images/instagram.svg";
+import facebook from "../../images/facebook.svg";
 import styles from "./Footer.module.css";
 
 const Footer = () => {

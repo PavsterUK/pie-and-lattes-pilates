@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 
-import WhatsPilates from "./WhatsPilates";
-import Contacts from "./Contacts";
-import Footer from "./Footer";
+import WhatsReformer from "../components/Tabs/WhatsReformer"
+import Contacts from "../components/Tabs/Contacts";
+import Footer from "./Navigation/Footer";
 import styles from "./LandingPage.module.css";
 import Navbar from "./Navigation/Navbar";
-import Pricing from "./Pricing";
-import Welcome from "./Welcome";
-import AboutMe from "./AboutMe";
+import Pricing from "../components/Tabs/Pricing";
+import Welcome from "../components/Tabs/Welcome";
+import AboutMe from "../components/Tabs/AboutMe";
 import Sidebar from "./Navigation/Sidebar";
-import Header from "./Header";
+import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
 
 const LandingPage = () => {
   const [isWelcome, setisWelcome] = useState(true);
-  const [isWhatsPilates, setIsWhatsPilates] = useState(false);
+  const [isWhatsReformer, setIsWhatsReformer] = useState(false);
   const [isPricing, setIsPricing] = useState(false);
   const [isContacts, setIsContacts] = useState(false);
   const [isAboutMe, setIsAboutMe] = useState(false);
 
-  const setIsWhatsPilatesHandler = () => {
+  const setIsWhatsReformerHandler = () => {
     setisWelcome(false);
     setIsPricing(false);
     setIsContacts(false);
     setIsAboutMe(false);
-    setIsWhatsPilates(true);
+    setIsWhatsReformer(true);
   };
 
   const setIsPricingHandler = () => {
     setisWelcome(false);
-    setIsWhatsPilates(false);
+    setIsWhatsReformer(false);
     setIsContacts(false);
     setIsAboutMe(false);
     setIsPricing(true);
   };
 
   const setIsHomeHandler = () => {
-    setIsWhatsPilates(false);
+    setIsWhatsReformer(false);
     setIsPricing(false);
     setIsContacts(false);
     setIsAboutMe(false);
@@ -44,7 +44,7 @@ const LandingPage = () => {
   };
 
   const setIsContactsHandler = () => {
-    setIsWhatsPilates(false);
+    setIsWhatsReformer(false);
     setIsPricing(false);
     setisWelcome(false);
     setIsAboutMe(false);
@@ -52,7 +52,7 @@ const LandingPage = () => {
   };
 
   const setIsAboutMeHandler = () => {
-    setIsWhatsPilates(false);
+    setIsWhatsReformer(false);
     setIsPricing(false);
     setisWelcome(false);
     setIsContacts(false);
@@ -64,7 +64,7 @@ const LandingPage = () => {
       <Header />
       <Sidebar
         setIsHome={setIsHomeHandler}
-        setIsWhatsPilates={setIsWhatsPilatesHandler}
+        setIsWhatsReformer={setIsWhatsReformerHandler}
         setIsPricing={setIsPricingHandler}
         setIsContacts={setIsContactsHandler}
         setIsAboutMe={setIsAboutMeHandler}
@@ -72,14 +72,14 @@ const LandingPage = () => {
 
       <Navbar
         setIsHome={setIsHomeHandler}
-        setIsWhatsPilates={setIsWhatsPilatesHandler}
+        setIsWhatsReformer={setIsWhatsReformerHandler}
         setIsPricing={setIsPricingHandler}
         setIsContacts={setIsContactsHandler}
         setIsAboutMe={setIsAboutMeHandler}
       />
 
       {isWelcome && <Welcome />}
-      {isWhatsPilates && <WhatsPilates />}
+      {isWhatsReformer && <WhatsReformer />}
       {isPricing && <Pricing />}
       {isContacts && <Contacts />}
       {isAboutMe && <AboutMe />}

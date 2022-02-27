@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./GUI/Card";
+import Card from "../GUI/Card";
 
 import styles from "./Pricing.module.css";
 

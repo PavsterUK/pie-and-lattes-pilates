@@ -18,7 +18,7 @@ const Sidebar = (props) => {
           <button onClick={setIsHomeHandler}>Home</button>
         </li>
         <li>
-          <button onClick={props.setIsWhatsPilates}>What's pilates?</button>
+          <button onClick={props.setIsWhatsReformer}>What's pilates?</button>
         </li>
         <li>
           <button onClick={props.setIsPricing}>Pricing</button>
