@@ -18,16 +18,16 @@ const Sidebar = (props) => {
           <button onClick={setIsHomeHandler}>Home</button>
         </li>
         <li>
-          <button onClick={props.setIsWhatsPilates}>What's pilates?</button>
+          <button onClick={props.setIsWhatsReformer}>What's Reformer?</button>
         </li>
         <li>
-          <button onClick={props.setIsPricing}>Pricing</button>
+          <button onClick={props.setIsPricing}>Prices &amp; Bookings</button>
         </li>
         <li>
           <button onClick={props.setIsAboutMe}> About Me</button>
         </li>
         <li>
-          <button onClick={props.setIsContacts}>Contacts</button>
+          <button onClick={props.setIsContacts}>Contact</button>
         </li>
       </ul>
     </Menu>

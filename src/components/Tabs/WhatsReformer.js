@@ -1,32 +1,16 @@
 import React from "react";
 
-import Card from "./GUI/Card";
-import styles from "./WhatsPilates.module.css";
-import funny from "../images/funny.jpeg";
-import reformer from "../images/Reformer Photo.jpg"
+import Card from "../GUI/Card";
+import styles from "./WhatsReformer.module.css";
+import funny from "../../images/funny.jpeg";
+import reformer from "../../images/Reformer Photo.jpg";
 
-const About = () => {
+ const WhatsReformer = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <h1>
-          What is Pilates? <br />
-        </h1>
         
-        <h3>
-          A system of exercises using special apparatus, designed to improve
-          physical strength, flexibility, and posture, and enhance mental
-          awareness.
-        </h3>
-
-        <h3>
-          Pilates is a type of mind-body exercise developed in the early 20th
-          century by Joseph Pilates, after whom it was named. Pilates called his
-          method "Contrology". It focuses on deep healthy breathing, flexible
-          and decompressed spine and joints, robust circulation, and the trinity
-          of body/mind/spirit.
-        </h3>
-        <hr />
+       
 
         <h1>What is Reformer?</h1>
         
@@ -44,10 +28,26 @@ const About = () => {
 
         <img src={reformer} alt="reformer"/>
         <hr />
+        <h1>
+          What is Pilates? <br />
+        </h1>
+
+        <h3>
+          Pilates is a type of mind-body exercise developed in the early 20th
+          century by Joseph Pilates, after whom it was named. Pilates called his
+          method "Contrology". It focuses on deep healthy breathing, flexible
+          and decompressed spine and joints, robust circulation, and the trinity
+          of body/mind/spirit.
+        </h3>
+        
+       
+        <hr />
         <img src={funny} alt="funny"/>
       </div>
     </Card>
   );
 };
 
-export default About;
+
+export default WhatsReformer ;
+

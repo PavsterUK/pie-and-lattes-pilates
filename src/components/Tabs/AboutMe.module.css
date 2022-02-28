@@ -1,18 +1,28 @@
 .container {
+  width: 60vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  font-family: Lato;
+  padding-bottom: 1em;
 }
 
+.container hr {
+  height: 1px;
+  width: 80%;
+  background-color: black;
+  border: none;
+}
 
-iframe {
+.container h3 {
+  width: 80%;
+}
+
+.container img {
   width: 100%;
-  border-radius: 5px;
-  border: 0;
 }
-
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
   .container {

@@ -25,7 +25,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: "Raleway", sans-serif;
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
@@ -55,15 +55,15 @@
 .greeter a {
   text-decoration: none;
   border: none;
-  padding: 0.5em 1.5em 0.5em 1.5em;
-  margin: 3em;
+  padding: 0.7em 2em 0.7em 2em;
+  margin: 1.5em 0 0em 0em;
   border-radius: 5px;
   font-size: 1.5em;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: capitalize;
-  background-color: #74769b5b;
+  background-color: #064420;  
   color: #faf1e6;
   -webkit-box-shadow: 5px 6px 3px -2px #000000;
   box-shadow: 5px 6px 3px -2px #000000;
@@ -78,7 +78,8 @@
 }
 
 .greeter a:hover {
-  background-color: #f3f3f36e;
+  background-color: #0c6431;
+  transform: scale(1.5);
 }
 
 .greeter a:active {
@@ -104,6 +105,7 @@
   .greeter a {
     padding: 0.5em 1.5em 0.5em 1.5em;
     font-size: 1em;
+    width: 50%;
   }
 
   .greeter a:active {
