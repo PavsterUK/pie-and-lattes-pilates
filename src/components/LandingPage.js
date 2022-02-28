@@ -19,12 +19,28 @@ const LandingPage = () => {
   const [isContacts, setIsContacts] = useState(false);
   const [isAboutMe, setIsAboutMe] = useState(false);
 
+  let tabList = [
+    {welcome : [isWelcome, setisWelcome]},
+    {whatsReformer : [isWhatsReformer, setIsWhatsReformer]},
+    {pricing : [isPricing, setIsPricing]},
+    {contacts : [isContacts, setIsContacts]},
+    {aboutMe : [isAboutMe, setIsAboutMe]}
+  ]
+
+  function openTab() {
+    tabList.forEach(function (arrayItem) {
+      console.log(arrayItem.keys());
+  });
+  }
+
+
   const setIsWhatsReformerHandler = () => {
     setisWelcome(false);
     setIsPricing(false);
     setIsContacts(false);
     setIsAboutMe(false);
     setIsWhatsReformer(true);
+    openTab();
   };
 
   const setIsPricingHandler = () => {
