@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import WhatsReformer from "../components/Tabs/WhatsReformer"
+import WhatsReformer from "../components/Tabs/WhatsReformer";
 import Contacts from "../components/Tabs/Contacts";
 import Footer from "./Navigation/Footer";
 import styles from "./LandingPage.module.css";
@@ -13,92 +13,38 @@ import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
 
 const LandingPage = () => {
-  const [isWelcome, setisWelcome] = useState(true);
-  const [isWhatsReformer, setIsWhatsReformer] = useState(false);
-  const [isPricing, setIsPricing] = useState(false);
-  const [isContacts, setIsContacts] = useState(false);
-  const [isAboutMe, setIsAboutMe] = useState(false);
-
-  let tabList = [
-    {welcome : [isWelcome, setisWelcome]},
-    {whatsReformer : [isWhatsReformer, setIsWhatsReformer]},
-    {pricing : [isPricing, setIsPricing]},
-    {contacts : [isContacts, setIsContacts]},
-    {aboutMe : [isAboutMe, setIsAboutMe]}
-  ]
-
-  function openTab() {
-    tabList.forEach(function (arrayItem) {
-      console.log(arrayItem.keys());
+  const [tabs, setTabs] = useState({
+    welcome: true,
+    whatsReformer: false,
+    pricing: false,
+    contacts: false,
+    about: false,
   });
-  }
-
-
-  const setIsWhatsReformerHandler = () => {
-    setisWelcome(false);
-    setIsPricing(false);
-    setIsContacts(false);
-    setIsAboutMe(false);
-    setIsWhatsReformer(true);
-    openTab();
-  };
-
-  const setIsPricingHandler = () => {
-    setisWelcome(false);
-    setIsWhatsReformer(false);
-    setIsContacts(false);
-    setIsAboutMe(false);
-    setIsPricing(true);
-  };
-
-  const setIsHomeHandler = () => {
-    setIsWhatsReformer(false);
-    setIsPricing(false);
-    setIsContacts(false);
-    setIsAboutMe(false);
-    setisWelcome(true);
-  };
-
-  const setIsContactsHandler = () => {
-    setIsWhatsReformer(false);
-    setIsPricing(false);
-    setisWelcome(false);
-    setIsAboutMe(false);
-    setIsContacts(true);
-  };
-
-  const setIsAboutMeHandler = () => {
-    setIsWhatsReformer(false);
-    setIsPricing(false);
-    setisWelcome(false);
-    setIsContacts(false);
-    setIsAboutMe(true);
-  };
 
   return (
     <div className={styles.container}>
       <Header />
       <Sidebar
-        setIsHome={setIsHomeHandler}
-        setIsWhatsReformer={setIsWhatsReformerHandler}
-        setIsPricing={setIsPricingHandler}
-        setIsContacts={setIsContactsHandler}
-        setIsAboutMe={setIsAboutMeHandler}
+        setIsHome={setTabs}
+        setIsWhatsReformer={setTabs}
+        setIsPricing={setTabs}
+        setIsContacts={setTabs}
+        setIsAboutMe={setTabs}
       />
 
       <Navbar
-        setIsHome={setIsHomeHandler}
-        setIsWhatsReformer={setIsWhatsReformerHandler}
-        setIsPricing={setIsPricingHandler}
-        setIsContacts={setIsContactsHandler}
-        setIsAboutMe={setIsAboutMeHandler}
+        setIsHome={setTabs}
+        setIsWhatsReformer={setTabs}
+        setIsPricing={setTabs}
+        setIsContacts={setTabs}
+        setIsAboutMe={setTabs}
       />
 
-      {isWelcome && <Welcome />}
-      {isWhatsReformer && <WhatsReformer />}
-      {isPricing && <Pricing />}
-      {isContacts && <Contacts />}
-      {isAboutMe && <AboutMe />}
+      {tabs.welcome && <Welcome />}
+      {tabs.whatsReformer && <WhatsReformer />}
+      {tabs.pricing && <Pricing />}
+      {tabs.contacts && <Contacts />}
+      {tabs.about && <AboutMe />}
       <Footer />
     </div>
   );

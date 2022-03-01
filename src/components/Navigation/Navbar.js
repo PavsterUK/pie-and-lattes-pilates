@@ -9,7 +9,7 @@ const Navbar = (props) => {
           <p>&mdash;</p>
         </li>
         <li>
-          <button onClick={props.setIsHome}>Home</button>
+          <button onClick={props.setIsHome  }>Home</button>
         </li>
         <li>
           <button onClick={props.setIsWhatsReformer}>What's Reformer?</button>
