@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import WhatsReformer from "../components/Tabs/WhatsReformer";
 import Contacts from "../components/Tabs/Contacts";
@@ -14,12 +14,19 @@ import "./Navigation/Sidebar.css";
 
 const LandingPage = () => {
   const [tabs, setTabs] = useState({
-    welcome: true,
+    welcome: false,
     whatsReformer: false,
     pricing: false,
     contacts: false,
     about: false,
   });
+
+  const openTab = (tabName) => {
+    setTabs((prevState) => ({
+      ...prevState,
+      tabName : true,
+    }));
+  }
 
   return (
     <div className={styles.container}>
