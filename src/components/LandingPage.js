@@ -6,51 +6,58 @@ import Footer from "./Navigation/Footer";
 import styles from "./LandingPage.module.css";
 import Navbar from "./Navigation/Navbar";
 import Pricing from "../components/Tabs/Pricing";
-import Welcome from "../components/Tabs/Welcome";
+import Home from "./Tabs/Home";
 import AboutMe from "../components/Tabs/AboutMe";
 import Sidebar from "./Navigation/Sidebar";
 import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
 
-const LandingPage = () => {
-  const [tabs, setTabs] = useState({
-    welcome: false,
-    whatsReformer: false,
-    pricing: false,
-    contacts: false,
-    about: false,
-  });
+const tabsClosed = {
+  welcome: false,
+  whatsReformer: false,
+  pricingBookings: false,
+  contact: false,
+  about: false,
+};
 
-  const openTab = (tabName) => {
-    setTabs((prevState) => ({
-      ...prevState,
-      tabName : true,
-    }));
+const LandingPage = () => {
+  const [tabs, setTabs] = useState(tabsClosed);
+
+  useEffect(() => {
+    openTab({ home: true });
+  }, []);
+
+  function openTab(openTab) {
+    setTabs({
+      ...tabsClosed,
+      ...openTab,
+    });
+    console.log(tabs);
   }
 
   return (
     <div className={styles.container}>
       <Header />
       <Sidebar
-        setIsHome={setTabs}
-        setIsWhatsReformer={setTabs}
-        setIsPricing={setTabs}
-        setIsContacts={setTabs}
-        setIsAboutMe={setTabs}
+        home={openTab}
+        whatsReformer={openTab}
+        pricingBookings={openTab}
+        contact={openTab}
+        about={openTab}
       />
 
       <Navbar
-        setIsHome={setTabs}
-        setIsWhatsReformer={setTabs}
-        setIsPricing={setTabs}
-        setIsContacts={setTabs}
-        setIsAboutMe={setTabs}
+        home={openTab}
+        whatsReformer={openTab}
+        pricingBookings={openTab}
+        contact={openTab}
+        about={openTab}
       />
 
-      {tabs.welcome && <Welcome />}
+      {tabs.home && <Home />}
       {tabs.whatsReformer && <WhatsReformer />}
-      {tabs.pricing && <Pricing />}
-      {tabs.contacts && <Contacts />}
+      {tabs.pricingBookings && <Pricing />}
+      {tabs.contact && <Contacts />}
       {tabs.about && <AboutMe />}
       <Footer />
     </div>
