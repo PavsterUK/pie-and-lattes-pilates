@@ -11,6 +11,7 @@ import AboutMe from "../components/Tabs/AboutMe";
 import Sidebar from "./Navigation/Sidebar";
 import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
+import Menu from "react-burger-menu";
 
 const tabsClosed = {
   welcome: false,
@@ -20,7 +21,7 @@ const tabsClosed = {
   about: false,
 };
 
-const LandingPage = () => {
+const LandingPage = (props) => {
   const [tabs, setTabs] = useState(tabsClosed);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const LandingPage = () => {
       ...tabsClosed,
       ...openTab,
     });
-    console.log(tabs);
+    
   }
 
   return (

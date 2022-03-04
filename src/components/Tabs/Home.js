@@ -1,9 +1,11 @@
 import React from "react";
 
 import styles from "./Home.module.css";
+import Card from "../GUI/Card";
 
 const Welcome = () => {
   return (
+    <Card>
     <div className={styles.container}>
       <div className={styles.greeter}>
         <h1>Welcome to keynsham Reformer pilates </h1>
@@ -37,6 +39,7 @@ const Welcome = () => {
         </p>
       </div>
     </div>
+    </Card>
   );
 };
 

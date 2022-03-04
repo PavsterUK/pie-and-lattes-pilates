@@ -5,11 +5,17 @@ import { bubble as Menu } from "react-burger-menu";
 const Sidebar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   return (
-    <Menu isOpen={isOpen} right width={"80%"} left {...props}>
+    <Menu
+      isOpen={isOpen}
+      right
+      width={"80vw"}
+      {...props}
+    >
       <ul>
         <li>
-          <button onClick={() => props.home({ home: true })}>Home</button>
+          <button onClick={""}>Home</button>
         </li>
         <li>
           <button onClick={() => props.whatsReformer({ whatsReformer: true })}>
