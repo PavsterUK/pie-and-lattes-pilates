@@ -24,6 +24,6 @@ iframe {
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
   .container {
-    width: 100vw;
+    width: 97vw;
   }
 }

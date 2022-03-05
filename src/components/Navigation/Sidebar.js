@@ -1,39 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import { bubble as Menu } from "react-burger-menu";
 
 const Sidebar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
 
+  let isMenuOpen = function(state) {
+    return state.isOpen;
+  };
 
   return (
     <Menu
-      isOpen={isOpen}
-      right
-      width={"80vw"}
-      {...props}
-    >
+      isOpen={isMenuOpen}
+      right 
+      width={"80vw"}>
       <ul>
         <li>
-          <button onClick={""}>Home</button>
+          <button onClick={ () => props.openTab({ home: true })}>Home</button>
         </li>
         <li>
-          <button onClick={() => props.whatsReformer({ whatsReformer: true })}>
+          <button onClick={() => props.openTab({ whatsReformer: true })}>
             What's Reformer?
           </button>
         </li>
         <li>
           <button
-            onClick={() => props.pricingBookings({ pricingBookings: true })}
+            onClick={() => props.openTab({ pricingBookings: true })}
           >
             Pricing &amp; Bookings
           </button>
         </li>
         <li>
-          <button onClick={() => props.about({ about: true })}> About</button>
+          <button onClick={() => props.openTab({ about: true })}> About</button>
         </li>
         <li>
-          <button onClick={() => props.about({ contact: true })}>
+          <button onClick={() => props.openTab({ contact: true })}>
             Contact
           </button>
         </li>

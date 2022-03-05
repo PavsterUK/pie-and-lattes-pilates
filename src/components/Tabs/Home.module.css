@@ -9,6 +9,7 @@
 }
 
 .greeter {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +90,7 @@
 
 @media only screen and (max-width: 800px) {
   .greeter {
-    margin-top: 5em;
+    margin-top: 2em;
     padding: 0;
   }
 
