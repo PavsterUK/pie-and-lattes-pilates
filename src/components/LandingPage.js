@@ -22,7 +22,6 @@ const tabsClosed = {
 
 const LandingPage = () => {
   const [tabs, setTabs] = useState(tabsClosed);
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     openTab({ home: true });
@@ -40,10 +39,7 @@ const LandingPage = () => {
     <div className={styles.container}>
       <Header />
       <Sidebar 
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
         openTab={openTab}
-        
       />
 
       <Navbar
