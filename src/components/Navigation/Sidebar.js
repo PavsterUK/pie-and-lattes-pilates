@@ -1,37 +1,45 @@
-import React, {useState} from 'react'
+import React, { useState, useContext } from "react";
 
-import { bubble as Menu } from 'react-burger-menu';
+import { bubble as Menu } from "react-burger-menu";
 
 const Sidebar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const setIsHomeHandler = () => {
-    props.setIsHome();
-    setIsOpen(false);
-  }
+  let isMenuOpen = function(state) {
+    return state.isOpen;
+  };
 
   return (
-    <Menu isOpen={ isOpen } right width={ '80%' } left {...props}>
-  
-        <ul >
+    <Menu
+      isOpen={isMenuOpen}
+      right 
+      width={"80vw"}>
+      <ul>
         <li>
-          <button onClick={setIsHomeHandler}>Home</button>
+          <button onClick={ () => props.openTab({ home: true })}>Home</button>
         </li>
         <li>
-          <button onClick={props.setIsWhatsReformer}>What's Reformer?</button>
+          <button onClick={() => props.openTab({ whatsReformer: true })}>
+            What's Reformer?
+          </button>
         </li>
         <li>
-          <button onClick={props.setIsPricing}>Prices &amp; Bookings</button>
+          <button
+            onClick={() => props.openTab({ pricingBookings: true })}
+          >
+            Pricing &amp; Bookings
+          </button>
         </li>
         <li>
-          <button onClick={props.setIsAboutMe}> About Me</button>
+          <button onClick={() => props.openTab({ about: true })}> About</button>
         </li>
         <li>
-          <button onClick={props.setIsContacts}>Contact</button>
+          <button onClick={() => props.openTab({ contact: true })}>
+            Contact
+          </button>
         </li>
       </ul>
     </Menu>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

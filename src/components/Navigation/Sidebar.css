@@ -8,23 +8,25 @@
 }
 
 #page-wrap {
-  
-
   /* Prevent sidebar from showing a scrollbar on page */
-  overflow: none;
+  overflow: hidden;
 }
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
+  /* display: flex; */
 
+ 
   /* Our sidebar item styling */
+  outline: none;
   text-decoration: none;
   margin-bottom: 10px;
+  padding-left: .5em;
   background-color: #064420;
   color: #d1d1d1;
   transition: color 0.2s;
   list-style: none;
+  
 }
 
 /* Change color on hover */
@@ -57,21 +59,19 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  /* height: 24px;
+  width: 24px; */
+  display: none;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  margin-left: auto;
+  /* margin-left: auto; */
   background: #faf1e6;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  padding: 0 !important;
-  margin: 0 !important;
-  left: 0 !important;
   background-color: #064420;
   font-size: 1.15em;
   overflow:hidden !important;

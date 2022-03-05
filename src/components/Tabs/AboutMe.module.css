@@ -21,11 +21,11 @@
 }
 
 .container img {
-  width: 100%;
+  width: 97%;
 }
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
   .container {
-    width: 100vw;
+    width: 97vw;
   }
 }

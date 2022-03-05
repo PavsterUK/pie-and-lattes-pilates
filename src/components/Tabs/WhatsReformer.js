@@ -12,7 +12,7 @@ import reformer from "../../images/Reformer Photo.jpg";
         
        
 
-        <h1>What is Reformer?</h1>
+        <h1>What is a Reformer?</h1>
         
         <h3>
           “The Reformer is the most widely known piece of Pilates equipment and

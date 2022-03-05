@@ -9,19 +9,27 @@ const Navbar = (props) => {
           <p>&mdash;</p>
         </li>
         <li>
-          <button onClick={props.setIsHome}>Home</button>
+          <button onClick={() => props.openTab({ home: true })}>
+            Home
+          </button>
         </li>
         <li>
-          <button onClick={props.setIsWhatsReformer}>What's Reformer?</button>
+          <button onClick={() => props.openTab({ whatsReformer: true })}>
+            What's Reformer?
+          </button>
         </li>
         <li>
-          <button onClick={props.setIsPricing}>pricing &amp; Bookings</button>
+          <button
+            onClick={() => props.openTab({ pricingBookings: true })}
+          >
+            pricing &amp; Bookings
+          </button>
         </li>
         <li>
-          <button onClick={props.setIsAboutMe}> About me</button>
+          <button onClick={() => props.openTab({ about: true })}> About</button>
         </li>
         <li>
-          <button onClick={props.setIsContacts}>contact</button>
+          <button onClick={() => props.openTab({ contact: true })}>contact</button>
         </li>
         <li>
           <p>&mdash;</p>

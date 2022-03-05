@@ -1,104 +1,60 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-import WhatsReformer from "../components/Tabs/WhatsReformer"
+import WhatsReformer from "../components/Tabs/WhatsReformer";
 import Contacts from "../components/Tabs/Contacts";
 import Footer from "./Navigation/Footer";
 import styles from "./LandingPage.module.css";
 import Navbar from "./Navigation/Navbar";
 import Pricing from "../components/Tabs/Pricing";
-import Welcome from "../components/Tabs/Welcome";
+import Home from "./Tabs/Home";
 import AboutMe from "../components/Tabs/AboutMe";
 import Sidebar from "./Navigation/Sidebar";
 import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
 
+const tabsClosed = {
+  welcome: false,
+  whatsReformer: false,
+  pricingBookings: false,
+  contact: false,
+  about: false,
+};
+
 const LandingPage = () => {
-  const [isWelcome, setisWelcome] = useState(true);
-  const [isWhatsReformer, setIsWhatsReformer] = useState(false);
-  const [isPricing, setIsPricing] = useState(false);
-  const [isContacts, setIsContacts] = useState(false);
-  const [isAboutMe, setIsAboutMe] = useState(false);
+  const [tabs, setTabs] = useState(tabsClosed);
+  const [isOpen, setIsOpen] = useState(false);
 
-  let tabList = [
-    {welcome : [isWelcome, setisWelcome]},
-    {whatsReformer : [isWhatsReformer, setIsWhatsReformer]},
-    {pricing : [isPricing, setIsPricing]},
-    {contacts : [isContacts, setIsContacts]},
-    {aboutMe : [isAboutMe, setIsAboutMe]}
-  ]
+  useEffect(() => {
+    openTab({ home: true });
+  }, []);
 
-  function openTab() {
-    tabList.forEach(function (arrayItem) {
-      console.log(arrayItem.keys());
-  });
+  const openTab = (openTab) => {
+    setTabs({
+      ...tabsClosed,
+      ...openTab,
+    });
   }
 
-
-  const setIsWhatsReformerHandler = () => {
-    setisWelcome(false);
-    setIsPricing(false);
-    setIsContacts(false);
-    setIsAboutMe(false);
-    setIsWhatsReformer(true);
-    openTab();
-  };
-
-  const setIsPricingHandler = () => {
-    setisWelcome(false);
-    setIsWhatsReformer(false);
-    setIsContacts(false);
-    setIsAboutMe(false);
-    setIsPricing(true);
-  };
-
-  const setIsHomeHandler = () => {
-    setIsWhatsReformer(false);
-    setIsPricing(false);
-    setIsContacts(false);
-    setIsAboutMe(false);
-    setisWelcome(true);
-  };
-
-  const setIsContactsHandler = () => {
-    setIsWhatsReformer(false);
-    setIsPricing(false);
-    setisWelcome(false);
-    setIsAboutMe(false);
-    setIsContacts(true);
-  };
-
-  const setIsAboutMeHandler = () => {
-    setIsWhatsReformer(false);
-    setIsPricing(false);
-    setisWelcome(false);
-    setIsContacts(false);
-    setIsAboutMe(true);
-  };
-
+  
   return (
     <div className={styles.container}>
       <Header />
-      <Sidebar
-        setIsHome={setIsHomeHandler}
-        setIsWhatsReformer={setIsWhatsReformerHandler}
-        setIsPricing={setIsPricingHandler}
-        setIsContacts={setIsContactsHandler}
-        setIsAboutMe={setIsAboutMeHandler}
+      <Sidebar 
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        openTab={openTab}
+        
       />
 
       <Navbar
-        setIsHome={setIsHomeHandler}
-        setIsWhatsReformer={setIsWhatsReformerHandler}
-        setIsPricing={setIsPricingHandler}
-        setIsContacts={setIsContactsHandler}
-        setIsAboutMe={setIsAboutMeHandler}
+        openTab={openTab}
       />
 
-      {isWelcome && <Welcome />}
-      {isWhatsReformer && <WhatsReformer />}
-      {isPricing && <Pricing />}
-      {isContacts && <Contacts />}
-      {isAboutMe && <AboutMe />}
+      {tabs.home && <Home />}
+      {tabs.whatsReformer && <WhatsReformer />}
+      {tabs.pricingBookings && <Pricing />}
+      {tabs.contact && <Contacts />}
+      {tabs.about && <AboutMe />}
       <Footer />
     </div>
   );
