@@ -12,13 +12,11 @@ const Sidebar = (props) => {
 
   const handleStateChange = (state) => {
     setMenuOpen(state.isOpen);
-    
   }
 
   const openTab = (tab) => {
-    console.log(tab);
     setMenuOpen(false);
-    // props.openTab(tab);
+    props.openTab(tab);
   }
 
   
@@ -32,25 +30,25 @@ const Sidebar = (props) => {
       width={"80vw"}>
       <ul>
         <li>
-          <button onClick={openTab({home: true})}>Home</button>
+          <button onClick={() => openTab({home: true})}>Home</button>
         </li>
         <li>
-          <button onClick={() => props.openTab({ whatsReformer: true })}>
+          <button onClick={() => openTab({ whatsReformer: true })}>
             What's Reformer?
           </button>
         </li>
         <li>
           <button
-            onClick={() => props.openTab({ pricingBookings: true })}
+            onClick={() => openTab({ pricingBookings: true })}
           >
             Pricing &amp; Bookings
           </button>
         </li>
         <li>
-          <button onClick={() => props.openTab({ about: true })}> About</button>
+          <button onClick={() => openTab({ about: true })}> About</button>
         </li>
         <li>
-          <button onClick={() => props.openTab({ contact: true })}>
+          <button onClick={() => openTab({ contact: true })}>
             Contact
           </button>
         </li>
