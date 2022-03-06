@@ -5,11 +5,6 @@ import { bubble as Menu } from "react-burger-menu";
 const Sidebar = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  React.useEffect(() => {
-    openTab({ home: true });
-  }, []);
-
-
   const handleStateChange = (state) => {
     setMenuOpen(state.isOpen);
   }
@@ -18,9 +13,6 @@ const Sidebar = (props) => {
     setMenuOpen(false);
     props.openTab(tab);
   }
-
-  
-
 
   return (
     <Menu
