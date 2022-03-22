@@ -1,10 +1,10 @@
 import React from 'react'
 
-import styles from "./AboutMe.module.css"
+import styles from "./About.module.css"
 import Card from '../GUI/Card'
 import myPhoto from "../../images/me.jpg"
 
-const AboutMe = () => {
+const About = () => {
   return (
     <Card>
       <div className={styles.container}>
@@ -35,4 +35,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default About

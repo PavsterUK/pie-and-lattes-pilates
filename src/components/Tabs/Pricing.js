@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "../GUI/Card";
+import ProductCard from "../GUI/ProductCard";
+import TimeAndDate from "../../images/calendar-and-time.svg";
 
 import styles from "./Pricing.module.css";
 
@@ -23,6 +25,8 @@ const Pricing = () => {
 
         <br />
         (**Click on a card you wish to book**)
+
+        <ProductCard image={TimeAndDate}/>
 
         <ul className={styles.price_list}>
           <li>
