@@ -15,59 +15,45 @@
   width: 80%;
 }
 
-.container li {
-  padding: 0;
-  margin: 1em;
-  width: fit-content;
-  list-style-type: none;
-  background-color: #064420;
-  margin-top: 1em;
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
-  border-radius: 5px;
-}
-
-.container li a {
-  padding: 1em 2em 1em 0em;
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 1em;
-  color: #faf1e6;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-}
-
-.container li:hover {
-  background-color: #0b9243;
-}
-
-.price_list {
+.step1, .step2, .info {
+  margin: 0 0 2em 0;
+  background-color:#afc4cec4;
+  border: 3px solid black;
+  border-radius: 10px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 95%;
+}
+
+.step1 h1 , .step2 h1, .info h1 {
+  text-decoration: underline;
+}
+
+.starterPack {
+  display: flex;
+  justify-content: center;
+
 }
 
 .privateSessions {
   width: 80%;
   display: flex;
-  position: relative;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  justify-content: center;
 }
 
 .duetSession {
   width: 80%;
   display: flex;
+  justify-content: center;
 }
 
 .groupClasses {
   width: 80%;
   display: flex;
+  justify-content: center;
 }
 
 /* Media Queries */
@@ -75,17 +61,7 @@
   .container {
     width: 97vw;
   }
-  .container ul li a {
-    padding-right: 0;
-  }
+ 
 }
 
-@media only screen and (max-width: 500px) {
-  .container li {
-    width: 100%;
-  }
 
-  .price_list {
-    padding-left: 0;
-  }
-}

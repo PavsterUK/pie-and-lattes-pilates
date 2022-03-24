@@ -13,7 +13,7 @@ function ProductCard(props) {
       <hr />
       <h5>{props.summary}</h5>
       <h2>{props.price}</h2>
-      <a href={props.href}>{props.linkDesc}</a>
+      <a href={props.href} target="_blank" rel="noopener noreferrer">{props.linkDesc}</a>
     </div>
   );
 }
