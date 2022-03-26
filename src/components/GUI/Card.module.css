@@ -5,6 +5,7 @@
   border-radius: 15px;
   background-color: #fefefeaf;
   margin: 2em 0 2em 0;
+  overflow-x: auto;
   
 
   -webkit-animation-name: fadeIn;

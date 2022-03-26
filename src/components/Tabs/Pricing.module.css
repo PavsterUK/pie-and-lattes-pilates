@@ -15,9 +15,11 @@
   width: 80%;
 }
 
-.step1, .step2, .info {
+.step1,
+.step2,
+.info {
   margin: 0 0 2em 0;
-  background-color:#afc4cec4;
+  background-color: #afc4cec4;
   border: 3px solid black;
   border-radius: 10px;
   display: flex;
@@ -26,42 +28,41 @@
   align-items: center;
   height: fit-content;
   width: 95%;
+  overflow: hidden;
 }
 
-.step1 h1 , .step2 h1, .info h1 {
+.step1 h1,
+.step2 h1,
+.info h1 {
   text-decoration: underline;
+  text-align: center;
 }
 
-.starterPack {
-  display: flex;
-  justify-content: center;
-
-}
-
-.privateSessions {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-}
-
-.duetSession {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-}
-
+.starterPack,
+.privateSessions,
+.duetSessions,
 .groupClasses {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  overflow: auto;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 1000px) {
-  .container {
-    width: 97vw;
-  }
- 
+.groupClasses:focus-within .scrollRightImg{
+  visibility: hidden;
 }
 
+
+
+.scrollRightImg {
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  margin: 0 -1.6em 0 -1.6em ;
+}
+
+.scrollRightImg img {
+  width: 3em;
+  opacity: 0.5;
+}
 

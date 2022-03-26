@@ -4,6 +4,7 @@ import ProductCard from "../GUI/ProductCard";
 import TimeAndDate from "../../images/calendar-and-time.svg";
 import OnePerson from "../../images/one-person.svg";
 import ThreePerson from "../../images/team.svg";
+import ScrollRightImg from "../../images/scroll-right.svg";
 
 import styles from "./Pricing.module.css";
 
@@ -29,10 +30,12 @@ const Pricing = () => {
           <h1>How to Book</h1>
           <h2>
             Once you decided what option is most suitable for you - go to Step 1
-            and book a time slot. <br /> <br />After booking a time slot, go to Step 2 and
-            make a payment for booked slot .
+            and book a time slot. <br /> <br />
+            After booking a time slot, go to Step 2 and make a payment for
+            booked slot .
             <br /> <br />
-            If you previously purchased multiple sessions/classes, please go to Step 1 and book your time slot.
+            If you previously purchased multiple sessions/classes, please go to
+            Step 1 and book your time slot.
           </h2>
           <br />
         </div>
@@ -64,12 +67,17 @@ const Pricing = () => {
               linkDesc={"make a payment"}
             />
 
+            <div className={styles.scrollRightImg}>
+              <img src={ScrollRightImg} />
+            </div>
+
             <ProductCard
               image={OnePerson}
               price={"£75"}
               title={"Starter Pack"}
               summary={
-                "Two private sessions, to make your start of the Pilates journey smoother. First-time clients only."
+                "Two private sessions, to make your start of the Pilates journey smoother. First-time clients only." +
+                ""
               }
               href={"https://buy.stripe.com/fZe296fxxfrc1Y4eV4"}
               linkDesc={"make a payment"}
@@ -87,6 +95,10 @@ const Pricing = () => {
               href={"https://buy.stripe.com/8wMeVSadd1AmbyEaEG"}
               linkDesc={"make a payment"}
             />
+
+            <div className={styles.scrollRightImg}>
+              <img src={ScrollRightImg} />
+            </div>
 
             <ProductCard
               image={OnePerson}
@@ -111,7 +123,7 @@ const Pricing = () => {
             />
           </div>
 
-          <div className={styles.duetSession}>
+          <div className={styles.duetSessions}>
             <ProductCard
               image={OnePerson}
               secondImage={OnePerson}
@@ -124,13 +136,17 @@ const Pricing = () => {
               linkDesc={"make a payment"}
             />
 
+            <div className={styles.scrollRightImg}>
+              <img src={ScrollRightImg} />
+            </div>
+
             <ProductCard
               image={OnePerson}
               secondImage={OnePerson}
               price={"£310"}
               title={"5 Duet Sessions"}
               summary={
-                "Purchase a pack to get a better price. Share your session with a friend, colleague, or a loved one.."
+                "Purchase a pack to get a better price. Share your session with a friend, colleague, or a loved one."
               }
               href={"https://buy.stripe.com/dR6dROfxxfrcgSYbIO"}
               linkDesc={"make a payment"}
@@ -142,7 +158,7 @@ const Pricing = () => {
               price={"£600"}
               title={"10 Duet Sessions"}
               summary={
-                "Purchase a pack to get a better price. Share your session with a friend, colleague, or a loved one.."
+                "Purchase a pack to get a better price. Share your session with a friend, colleague, or a loved one."
               }
               href={"https://buy.stripe.com/5kA9By1GHfrc1Y46ov"}
               linkDesc={"make a payment"}
@@ -160,6 +176,10 @@ const Pricing = () => {
               href={"https://buy.stripe.com/dR64he7115QC1Y4dQY"}
               linkDesc={"make a payment"}
             />
+
+            <div className={styles.scrollRightImg}>
+              <img src={ScrollRightImg} />
+            </div>
 
             <ProductCard
               image={ThreePerson}
