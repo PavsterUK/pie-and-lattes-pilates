@@ -1,5 +1,5 @@
 .container {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,11 +7,8 @@
   font-family: Lato;
 }
 
-.container p {
-  font-size: 1.3em;
-}
-
-.container h3 {
+.container h2 {
+  text-align: center;
   width: 80%;
 }
 
@@ -19,15 +16,15 @@
 .step2,
 .info {
   margin: 0 0 2em 0;
-  background-color: #afc4cec4;
+  /* background-color: #afc4cec4;
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: fit-content;
-  width: 95%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -37,19 +34,37 @@
   text-decoration: underline;
   text-align: center;
 }
-
 .starterPack,
 .privateSessions,
 .duetSessions,
 .groupClasses {
-  width: 100%;
+  width: 98%;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  overflow: auto;
+  /* background-color: #afc4cec4; */
+  background-color: #fed8cf;
+  border-left:  3px solid black;
+  border-top:  3px solid black;
+  border-bottom:  3px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: 1em 0 0 0;
+}
+
+.starterPackCardWrapper,
+.privateSessionsWrapper,
+.duetSessionsWrapper,
+.groupClassesWrapper {
+  display: flex;
   overflow: auto;
 }
 
-.groupClasses:focus-within .scrollRightImg{
-  visibility: hidden;
+.packDesc {
+  align-self: center;
+  width:fit-content;
+  height:fit-content;
+  margin-bottom: 0;
 }
 
 
