@@ -3,16 +3,16 @@ import React from "react";
 import styles from "./Home.module.css";
 import Card from "../GUI/Card";
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <Card>
     <div className={styles.container}>
       <div className={styles.greeter}>
         <h1>Welcome to keynsham Reformer pilates </h1>
 
-        <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759">
+        <button onClick={() => props.openTab({pricingBookings: true})}> 
           Book now &#x27A4;
-        </a>
+        </button>
 
         <p>
           We offer one-to-one and group Reformer Pilates classes in our

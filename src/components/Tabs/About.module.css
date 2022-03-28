@@ -6,7 +6,13 @@
   justify-content: center;
   text-align: center;
   font-family: Lato;
-  padding-bottom: 1em;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 92vw;
+  }
 }
 
 .container hr {
@@ -21,11 +27,5 @@
 }
 
 .container img {
-  width: 97%;
-}
-/* Media Queries */
-@media only screen and (max-width: 1000px) {
-  .container {
-    width: 97vw;
-  }
+  width: 100%;
 }

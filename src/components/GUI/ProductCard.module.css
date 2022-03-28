@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 2em;
+  border-radius: 5px;
+  width: 12em;
+  min-width: 12em;
+  background-color: #064420;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-shadow: 0px 3px 4px 2px #000000;
+  box-shadow: 0px 3px 4px 2px #000000;
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    width: 16em;
+    min-width: 16em;
+  }
+}
+
+.container :is(h1, h2, h3, h5) {
+  color: #ffff;
+  width: fit-content;
+  align-self: center;
+}
+
+.container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+.container h5 {
+  text-align: center;
+  align-self: center;
+  text-transform: uppercase;
+  margin-bottom: 0em;
+}
+
+.container hr {
+  margin: -0.5em 0 -0.5em 0;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  height: 4.5em;
+  width: 100%;
+}
+
+.image img {
+  height: 100%;
+}
+
+.container a {
+  margin-top: auto;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #faf1e6;
+  width: 100%;
+  align-self: center;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.container a:visited {
+  color: black;
+  text-decoration: none;
+}
