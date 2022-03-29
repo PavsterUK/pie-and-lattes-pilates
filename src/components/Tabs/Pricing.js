@@ -53,7 +53,7 @@ const Pricing = () => {
 
         <div className={styles.step2}>
           <h1>Pricing and Packs</h1>
-          <h3> !!!Please be aware of the 24 hours cancelation policy!!! </h3>
+          <h3> ~~Please be aware of the 24 hours cancellation policy.~~ </h3>
           <br/>
           <h3>***Payable at the end of a time slot booking.</h3>
           <div className={styles.starterPack}>
