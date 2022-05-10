@@ -4,8 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-family: Lato;
+  font-family:Arial, Helvetica, sans-serif;
   padding: 1em;
 }
 
@@ -15,17 +14,29 @@
   }
 }
 
+.smallPicContainer {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.smallPics {
+  height: 2.2em;
+  padding: 1em;
+}
+
 .container hr {
   height: 1px;
-  width: 80%;
+  width: 90%;
   background-color: black;
   border: none;
 }
 
 .container h3 {
-  width: 80%;
+  width: 90%;
 }
 
-.container img {
-  width: 100%;
+#myPhoto {
+  width: 90%;
+  border-radius: 50%;
 }

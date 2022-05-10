@@ -3,6 +3,9 @@ import React from "react";
 import styles from "./About.module.css";
 import Card from "../GUI/Card";
 import myPhoto from "../../images/me.jpg";
+import BalancePic from "../../images/taoism.svg";
+import GirlExerPic from "../../images/girl-exercise-pose.svg";
+import LotusPic from "../../images/lotus.svg";
 
 const About = () => {
   return (
@@ -17,25 +20,31 @@ const About = () => {
             long hours in front of the computer, while studying Law and working
             for the busy global antipiracy company, Pilates was the only thing
             that would help me to regain my body and calm my mind.
-            <br />
-            <br /> I have been practicing Pilates myself since 2006 and already
+            <div className={styles.smallPicContainer}>
+              <img className={styles.smallPics} src={GirlExerPic}/>
+            </div>
+            I have been practicing Pilates since 2006 and already
             happily reaching my first decade of teaching. I have completed The
             Pilates Center Advanced Teacher training program, which is also
             known as the “Harvard of Pilates” in 2015 in London.
-            <br />
-            <br /> I have continued my Pilates education working with master
+            <div className={styles.smallPicContainer}>
+              <img className={styles.smallPics} src={LotusPic}/>
+            </div>
+            I have continued my Pilates education working with master
             teachers Debora Kolwey, Rachel Taylor Segel and Amy Taylor Alpers.
             Having the interest to adapt Pilates to children led me to the
             Polestar Pilates course - Pilates for Juniors.
-            <br />
-            <br /> Life is all about balance. So it is important to have some
+            <div className={styles.smallPicContainer}>
+              <img className={styles.smallPics} src={BalancePic}/>
+            </div>
+            Life is all about balance. So it is important to have some
             Pie and Lattes, but also some Pilates. Come and join me for fun,
             vigorous classes, where you can connect your mind and body, improve
             your balance, flexibility, muscular tone. Become healthier happier,
             and stronger.
           </h3>
 
-          <img src={myPhoto} alt="me"></img>
+          <img id={styles.myPhoto} src={myPhoto} alt="me"></img>
         
       </div>
     </Card>
