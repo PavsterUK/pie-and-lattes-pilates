@@ -20,7 +20,7 @@ const Sidebar = (props) => {
       isOpen={menuOpen}
       right 
       width={"80vw"}>
-      <ul>
+      <ul onBlur={() => setMenuOpen(false)}>
         <li>
           <button onClick={() => openTab({home: true})}>Home</button>
         </li>

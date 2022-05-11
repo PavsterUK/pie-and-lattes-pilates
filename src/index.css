@@ -24,8 +24,20 @@
       format("truetype");
 }
 
+@font-face {
+  font-family: "Bodoni";
+  src: local("Bodoni"),
+    url("./fonts/Bodoni/Bodoni\ Sans\ Text\ Regular.otf")
+      format("truetype");
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
 }
