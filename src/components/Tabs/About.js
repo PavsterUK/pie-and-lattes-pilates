@@ -3,8 +3,6 @@ import React from "react";
 import styles from "./About.module.css";
 import Card from "../GUI/Card";
 import myPhoto from "../../images/me.jpg";
-import BalancePic from "../../images/taoism.svg";
-import GirlExerPic from "../../images/girl-exercise-pose.svg";
 import LotusPic from "../../images/lotus.svg";
 
 const About = () => {
@@ -21,21 +19,21 @@ const About = () => {
             for the busy global antipiracy company, Pilates was the only thing
             that would help me to regain my body and calm my mind.
             <div className={styles.smallPicContainer}>
-              <img className={styles.smallPics} src={GirlExerPic}/>
+              <img className={styles.smallPics} src={LotusPic} alt="lotus"/>
             </div>
             I have been practicing Pilates since 2006 and already
             happily reaching my first decade of teaching. I have completed The
             Pilates Center Advanced Teacher training program, which is also
             known as the “Harvard of Pilates” in 2015 in London.
             <div className={styles.smallPicContainer}>
-              <img className={styles.smallPics} src={LotusPic}/>
+              <img className={styles.smallPics} src={LotusPic}  alt="lotus"/>
             </div>
             I have continued my Pilates education working with master
             teachers Debora Kolwey, Rachel Taylor Segel and Amy Taylor Alpers.
             Having the interest to adapt Pilates to children led me to the
             Polestar Pilates course - Pilates for Juniors.
             <div className={styles.smallPicContainer}>
-              <img className={styles.smallPics} src={BalancePic}/>
+              <img className={styles.smallPics} src={LotusPic}  alt="lotus"/>
             </div>
             Life is all about balance. So it is important to have some
             Pie and Lattes, but also some Pilates. Come and join me for fun,

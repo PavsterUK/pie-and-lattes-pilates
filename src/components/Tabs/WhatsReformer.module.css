@@ -17,9 +17,15 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .container h3 {
+    width: 70%;
+  }
+}
+
 .container img {
   width: 50%;
-  margin-bottom: 1em;
+  border-radius: 10%;
 }
 
 .container h1 {

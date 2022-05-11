@@ -12,23 +12,30 @@ const Contacts = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <h1>Contact Us</h1>
+        <h1>Contact</h1>
         <hr />
 
-        <h3>PIE&amp;LATTES Pilates Studio</h3>
+        <h3 id={styles.title}>
+          PIE &amp; LATTES <br /> PILATES <br /> Studio
+        </h3>
 
-        <img className={styles.img} src={EmailPic} />
-        <h3>pienadlattesstudio@gmail.com</h3>
-        <img className={styles.img} src={PhonePic} />
-        <h3>+447884788700</h3>
-        <img className={styles.img} src={LocationPic} />
+        <img className={styles.img} src={EmailPic} alt="email" />
+        <h3 id={styles.email}>
+          <a href="mailto:pienadlattesstudio@gmail.com">
+            pienadlattesstudio@gmail.com
+          </a>
+        </h3>
+        <img className={styles.img} src={PhonePic} alt="phone" />
+        <a href="tel:+447884788700">+447884788700</a>
+
+        <img className={styles.img} src={LocationPic} alt="location" />
         <h3>23a High Street, Keynsham, BS31 1DP</h3>
         <div className={styles.socialMedia}>
           <a href="https://www.facebook.com/PieandLattesPilatesStudio/">
-            <img className={styles.img} src={FacebookPic} />
+            <img className={styles.img} src={FacebookPic} alt="facebook" />
           </a>
           <a href="https://www.instagram.com/pienadlattes_pilates_studio/">
-            <img className={styles.img} src={InstagramPic} />
+            <img className={styles.img} src={InstagramPic} alt="instagram"/>
           </a>
         </div>
 
