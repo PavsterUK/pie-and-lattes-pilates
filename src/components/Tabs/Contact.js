@@ -21,8 +21,8 @@ const Contacts = () => {
 
         <img className={styles.img} src={EmailPic} alt="email" />
         <h3 id={styles.email}>
-          <a href="mailto:pienadlattesstudio@gmail.com">
-            pienadlattesstudio@gmail.com
+          <a href="mailto:pieandlattesstudio@gmail.com">
+            pieandlattesstudio@gmail.com
           </a>
         </h3>
         <img className={styles.img} src={PhonePic} alt="phone" />
