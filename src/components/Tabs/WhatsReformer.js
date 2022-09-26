@@ -3,7 +3,8 @@ import React from "react";
 import Card from "../GUI/Card";
 import styles from "./WhatsReformer.module.css";
 import funny from "../../images/funny.jpeg";
-import reformer from "../../images/Reformer Photo.jpg";
+//import reformer from "../../images/Reformer Photo.jpg";
+import reformer from "../../images/pilates-machine.jpg";
 
 const WhatsReformer = () => {
   return (

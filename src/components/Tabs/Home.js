@@ -10,7 +10,7 @@ const Welcome = (props) => {
       <div className={styles.greeter}>
         <h1>Welcome to keynsham Reformer pilates </h1>
 
-        <button onClick={() => props.openTab({pricingBookings: true})}> 
+        <button className={styles.rubberBand} onClick={() => props.openTab({pricingBookings: true})}> 
           Book now &#x27A4;
         </button>
 

@@ -5,11 +5,9 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
-  
 }
 
 .greeter {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +61,7 @@
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: capitalize;
-  background-color: #064420;  
+  background-color: #064420;
   color: #faf1e6;
   -webkit-box-shadow: 5px 6px 3px -2px #000000;
   box-shadow: 5px 6px 3px -2px #000000;
@@ -110,10 +108,8 @@
   }
 
   .greeter button:active {
-    font-size: .9em;
+    font-size: 0.9em;
   }
-
-  
 }
 
 /* Animations */
@@ -154,3 +150,4 @@
     transform: none;
   }
 }
+

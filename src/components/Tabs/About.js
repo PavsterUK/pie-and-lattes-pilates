@@ -2,8 +2,8 @@ import React from "react";
 
 import styles from "./About.module.css";
 import Card from "../GUI/Card";
-import myPhoto from "../../images/me.jpg";
 import LotusPic from "../../images/lotus.svg";
+import myPhoto from "../../images/Ingrida.JPG";
 
 const About = () => {
   return (
