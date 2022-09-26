@@ -76,12 +76,12 @@ const Pricing = () => {
 
               <ProductCard
                 images={[OnePerson]}
-                price={"£75"}
+                price={"£80"}
                 title={"Starter Pack"}
                 summary={
                   "Two private sessions, to make your start of the Pilates journey smoother. First-time clients only."
                 }
-                href={"https://buy.stripe.com/fZe296fxxfrc1Y4eV4"}
+                href={"https://buy.stripe.com/bIY8xu9995QCbyEeV5"}
                 linkDesc={"Buy now"}
               />
             </div>
@@ -92,7 +92,7 @@ const Pricing = () => {
             <div className={styles.privateSessionsWrapper}>
               <ProductCard
                 images={[OnePerson]}
-                price={"£51"}
+                price={"£54"}
                 title={"1 off Private Session"}
                 summary={
                   "If you like to work out alone or have some specific issues, the one-to-one session is exactly what you need."
@@ -107,23 +107,23 @@ const Pricing = () => {
 
               <ProductCard
                 images={[OnePerson]}
-                price={"£245"}
-                title={"5 Private Sessions"}
+                price={"£200"}
+                title={"4 Private Sessions"}
                 summary={
                   "PURCHASE A PACK TO GET A BETTER PRICE. IF YOU LIKE TO WORK OUT ALONE OR HAVE SOME SPECIFIC ISSUES, THE ONE-TO-ONE SESSION IS EXACTLY WHAT YOU NEED."
                 }
-                href={"https://buy.stripe.com/5kA1523OPbaWdGM6or"}
+                href={"https://buy.stripe.com/dR63daett6UG3286oA"}
                 linkDesc={"Buy now"}
               />
 
               <ProductCard
                 images={[OnePerson]}
-                price={"£470"}
-                title={"10 Private Sessions"}
+                price={"£385"}
+                title={"8 Private Sessions"}
                 summary={
                   "PURCHASE A PACK TO GET A BETTER PRICE. IF YOU LIKE TO WORK OUT ALONE OR HAVE SOME SPECIFIC ISSUES, THE ONE-TO-ONE SESSION IS EXACTLY WHAT YOU NEED."
                 }
-                href={"https://buy.stripe.com/5kA4hefxxbaW1Y47sw"}
+                href={"https://buy.stripe.com/bIY5li0CD4My3288wJ"}
                 linkDesc={"Buy now"}
               />
             </div>
@@ -134,7 +134,7 @@ const Pricing = () => {
             <div className={styles.duetSessionsWrapper}>
               <ProductCard
                 images={[OnePerson,OnePerson]}
-                price={"£64"}
+                price={"£67"}
                 title={"1 off Duet Session"}
                 summary={
                   "Share your session with a friend, colleague, or a loved one."
@@ -149,23 +149,23 @@ const Pricing = () => {
 
               <ProductCard
                 images={[OnePerson,OnePerson]}
-                price={"£310"}
-                title={"5 Duet Sessions"}
+                price={"£255"}
+                title={"4 Duet Sessions"}
                 summary={
                   "Purchase a pack to get a better price. Share your session with a friend, colleague, or a loved one."
                 }
-                href={"https://buy.stripe.com/dR6dROfxxfrcgSYbIO"}
+                href={"https://buy.stripe.com/9AQbJG2KL92OfOU7sI"}
                 linkDesc={"Buy now"}
               />
 
               <ProductCard
                 images={[OnePerson,OnePerson]}
-                price={"£600"}
-                title={"10 Duet Sessions"}
+                price={"£500"}
+                title={"8 Duet Sessions"}
                 summary={
                   "Purchase a pack to get a better price. Share your session with a friend, colleague, or a loved one."
                 }
-                href={"https://buy.stripe.com/5kA9By1GHfrc1Y46ov"}
+                href={"https://buy.stripe.com/5kA296bhh2Eq9qwbIZ"}
                 linkDesc={"Buy now"}
               />
             </div>
@@ -176,12 +176,12 @@ const Pricing = () => {
             <div className={styles.groupClassesWrapper}>
               <ProductCard
                 images={[ThreePerson]}
-                price={"£90"}
-                title={"5 Group classes"}
+                price={"£88"}
+                title={"4 Group classes"}
                 summary={
                   "We offer group classes to all levels and abilities at a maximum of 3 people per group, which will allow you to get the maximum attention from your instructor during the class."
                 }
-                href={"https://buy.stripe.com/dR64he7115QC1Y4dQY"}
+                href={"https://buy.stripe.com/aEU7tqadd92O1Y400i"}
                 linkDesc={"Buy now"}
               />
 
@@ -191,12 +191,12 @@ const Pricing = () => {
 
               <ProductCard
                 images={[ThreePerson]}
-                price={"£170"}
-                title={"10 Group classes"}
+                price={"£168"}
+                title={"8 Group classes"}
                 summary={
                   "We offer group classes to all levels and abilities at a maximum of 3 people per group, which will allow you to get the maximum attention from your instructor during the class."
                 }
-                href={"https://buy.stripe.com/eVa7tq7117YKgSYfZ7"}
+                href={"https://buy.stripe.com/00geVS2KLdj446c28r"}
                 linkDesc={"Buy now"}
               />
             </div>
