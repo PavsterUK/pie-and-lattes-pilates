@@ -61,7 +61,7 @@ const Pricing = () => {
             <div className={styles.starterPackCardWrapper}>
               <ProductCard
                 images={[OnePerson]}
-                price={"£25"}
+                price={"£33"}
                 title={"Taster Session"}
                 summary={
                   "For first-time clients only. We recommend you to start with a 55-minute one-to-one class to see how Pilates with us can help you achieve your goals. "

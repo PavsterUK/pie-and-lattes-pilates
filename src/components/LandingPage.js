@@ -12,7 +12,7 @@ import Sidebar from "./Navigation/Sidebar";
 import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
 
-const tabsClosed = {
+const openTabs = {
   welcome: false,
   whatsReformer: false,
   pricingBookings: false,
@@ -21,7 +21,7 @@ const tabsClosed = {
 };
 
 const LandingPage = () => {
-  const [tabs, setTabs] = useState(tabsClosed);
+  const [tabs, setTabs] = useState(openTabs);
 
   useEffect(() => {
     openTab({ home: true });
@@ -29,7 +29,7 @@ const LandingPage = () => {
 
   const openTab = (openTab) => {
     setTabs({
-      ...tabsClosed,
+      ...openTabs,
       ...openTab,
     });
   }
