@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import WhatsReformer from "../components/Tabs/WhatsReformer";
 import Contacts from "./Tabs/Contact";
@@ -12,47 +13,25 @@ import Sidebar from "./Navigation/Sidebar";
 import Header from "./Navigation/Header";
 import "./Navigation/Sidebar.css";
 
-const openTabs = {
-  welcome: false,
-  whatsReformer: false,
-  pricingBookings: false,
-  contact: false,
-  about: false,
-};
-
 const LandingPage = () => {
-  const [tabs, setTabs] = useState(openTabs);
-
-  useEffect(() => {
-    openTab({ home: true });
-  }, []);
-
-  const openTab = (openTab) => {
-    setTabs({
-      ...openTabs,
-      ...openTab,
-    });
-  }
-
-  
   return (
-    <div className={styles.container}>
-      <Header />
-      <Sidebar 
-        openTab={openTab}
-      />
+    <HashRouter>
+      <div className={styles.container}>
+        <Header />
+        <Sidebar />
+        <Navbar />
 
-      <Navbar
-        openTab={openTab}
-      />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/whats-reformer" element={<WhatsReformer />} />
+          <Route path="/pricing-bookings" element={<Pricing />} />
+          <Route path="/contact" element={<Contacts />} />
+          <Route path="/our-team" element={<AboutMe />} />
+        </Routes>
 
-      {tabs.home && <Home openTab={openTab} />}
-      {tabs.whatsReformer && <WhatsReformer />}
-      {tabs.pricingBookings && <Pricing />}
-      {tabs.contact && <Contacts />}
-      {tabs.about && <AboutMe />}
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </HashRouter>
   );
 };
 

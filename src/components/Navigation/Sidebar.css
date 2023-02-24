@@ -1,5 +1,3 @@
-
-
 #App {
   font-family: sans-serif;
 
@@ -14,19 +12,14 @@
 
 /* Individual item */
 .bm-item {
-  /* display: flex; */
-
- 
-  /* Our sidebar item styling */
   outline: none;
   text-decoration: none;
   margin-bottom: 10px;
-  padding-left: .5em;
+  padding-left: 0.5em;
   background-color: #064420;
   color: #d1d1d1;
   transition: color 0.2s;
   list-style: none;
-  
 }
 
 /* Change color on hover */
@@ -74,27 +67,29 @@
 .bm-menu {
   background-color: #064420;
   font-size: 1.15em;
-  overflow:hidden !important;
+  overflow: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #064420;
-
 }
 
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  
 }
-.bm-item-list button {
+.bm-item-list li {
+  font-family: sans-serif;
   margin-top: 1em;
   background-color: #064420;
   color: #faf1e6;
   font-size: 1.5em;
   border: none;
-  
+}
+
+.bm-item-list li a {
+  color: #faf1e6;
 }
 
 /* Styling of overlay */

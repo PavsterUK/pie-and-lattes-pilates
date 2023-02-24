@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div className={styles.container}>
       <ul className={styles.main_nav}>
@@ -9,31 +10,21 @@ const Navbar = (props) => {
           <p>&mdash;</p>
         </li>
         <li>
-          <button onClick={() => props.openTab({ home: true })}>
-            Home
-          </button>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <button onClick={() => props.openTab({ whatsReformer: true })}>
-            What's Reformer?
-          </button>
+          <Link to="/whats-reformer">What's a Reformer?</Link>
         </li>
         <li>
-          <button
-            onClick={() => props.openTab({ pricingBookings: true })}
-          >
-            pricing &amp; Bookings
-          </button>
+          <Link to="/pricing-bookings">Pricing &amp; Bookings</Link>
         </li>
         <li>
-          <button onClick={() => props.openTab({ about: true })}> About</button>
+          <Link to="/our-team">OUR TEAM</Link>
         </li>
         <li>
-          <button onClick={() => props.openTab({ contact: true })}>contact</button>
+          <Link to="/contact">Contact</Link>
         </li>
-        <li>
-          <p>&mdash;</p>
-        </li>
+        <p>&mdash;</p>
       </ul>
     </div>
   );
