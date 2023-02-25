@@ -10,7 +10,7 @@ const WhatsReformer = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <h1>What is a Reformer?</h1>
+        <h1 className="section-header" >What is a Reformer?</h1>
         <img src={reformer} alt="reformer" />
         <h3>
           “The Reformer is the most widely known piece of Pilates equipment and

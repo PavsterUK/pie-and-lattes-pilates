@@ -1,48 +1,48 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 import { bubble as Menu } from "react-burger-menu";
 
-const Sidebar = (props) => {
+const Sidebar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleStateChange = (state) => {
     setMenuOpen(state.isOpen);
-  }
-
-  const openTab = (tab) => {
-    setMenuOpen(false);
-    props.openTab(tab);
-  }
+  };
 
   return (
     <Menu
       onStateChange={(state) => handleStateChange(state)}
       isOpen={menuOpen}
-      right 
-      width={"80vw"}>
+      right
+      width={"80vw"}
+    >
       <ul onBlur={() => setMenuOpen(false)}>
         <li>
-          <button onClick={() => openTab({home: true})}>Home</button>
+          <Link className="mobile-link" to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <button onClick={() => openTab({ whatsReformer: true })}>
-            What's Reformer?
-          </button>
+          <Link className="mobile-link" to="/whats-reformer">
+            What's a Reformer?
+          </Link>
         </li>
         <li>
-          <button
-            onClick={() => openTab({ pricingBookings: true })}
-          >
-            Pricing &amp; Bookings
-          </button>
+          <Link className="mobile-link" to="/pricing-bookings">
+            Pricing and Bookings
+          </Link>
         </li>
         <li>
-          <button onClick={() => openTab({ about: true })}> About</button>
+          <Link className="mobile-link" to="/our-team">
+            Our Team
+          </Link>
         </li>
         <li>
-          <button onClick={() => openTab({ contact: true })}>
+          <Link className="mobile-link" to="/contact">
             Contact
-          </button>
+          </Link>
         </li>
       </ul>
     </Menu>
