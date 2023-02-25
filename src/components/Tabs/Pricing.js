@@ -14,7 +14,7 @@ const Pricing = () => {
     <Card>
       <div className={styles.container}>
         <RoundedPinkBox>
-          <h1>Where To Begin?</h1>
+          <h1 className="section-header" >Where To Begin?</h1>
           <h3>
             We recommend you start with a 55-minute Taster session to see how
             Pilates with us can help you achieve your goals.

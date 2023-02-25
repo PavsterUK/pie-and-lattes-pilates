@@ -12,11 +12,10 @@ const Contacts = () => {
   return (
     <Card>
       <div className={styles.container}>
-        <h1>Contact</h1>
-        <hr />
+        <h1 className="section-header">CONTACT</h1>
 
         <h3 id={styles.title}>
-          PIE &amp; LATTES <br /> PILATES <br /> Studio
+          PIE &amp; LATTES PILATES <br /> Studio
         </h3>
 
         <img className={styles.img} src={EmailPic} alt="email" />
@@ -35,7 +34,7 @@ const Contacts = () => {
             <img className={styles.img} src={FacebookPic} alt="facebook" />
           </a>
           <a href="https://www.instagram.com/pienadlattes_pilates_studio/">
-            <img className={styles.img} src={InstagramPic} alt="instagram"/>
+            <img className={styles.img} src={InstagramPic} alt="instagram" />
           </a>
         </div>
 
