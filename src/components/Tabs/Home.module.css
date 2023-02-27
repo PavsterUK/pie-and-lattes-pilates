@@ -50,6 +50,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+.greeter a {
+  width: 100%;
+}
+
 .greeter button {
   text-decoration: none;
   border: none;
@@ -150,4 +154,3 @@
     transform: none;
   }
 }
-

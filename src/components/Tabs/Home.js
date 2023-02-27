@@ -7,11 +7,11 @@ import Card from "../GUI/Card";
 const Welcome = () => {
   return (
     <Card>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <div className={styles.greeter}>
           <h1>Welcome to keynsham Reformer pilates </h1>
           <Link to="/pricing-bookings">
-            <button className={styles.rubberBand}>Book now &#x27A4;</button>
+            <button>Book now &#x27A4;</button>
           </Link>
 
           <p>
@@ -23,7 +23,6 @@ const Welcome = () => {
           </p>
 
           <p>
-            {" "}
             <br /> The group Reformer classes are designed to boost fitness,
             strength, and flexibility. If you like to work out alone or have
             some specific issues, the one-to-one session is exactly what you
@@ -39,7 +38,7 @@ const Welcome = () => {
             scoliosis and many others.
           </p>
         </div>
-      </div>
+      </section>
     </Card>
   );
 };

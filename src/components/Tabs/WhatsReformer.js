@@ -9,7 +9,7 @@ import reformer from "../../images/pilates-machine.jpg";
 const WhatsReformer = () => {
   return (
     <Card>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <h1 className="section-header" >What is a Reformer?</h1>
         <img src={reformer} alt="reformer" />
         <h3>
@@ -38,7 +38,7 @@ const WhatsReformer = () => {
         </h3>
         <br />
         <img src={funny} alt="funny" />
-      </div>
+      </section>
     </Card>
   );
 };

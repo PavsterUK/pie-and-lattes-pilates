@@ -9,9 +9,9 @@ import TeamMember from "../GUI/TeamMember";
 const About = () => {
   return (
     <Card>
-      <div className={`${styles.container}`}>
+      <section className={`${styles.container}`}>
         <h1 className="section-header">MEET OUR TEAM </h1>
-        <section className={styles.teamMembersWrapper}>
+        <div className={styles.teamMembersWrapper}>
           <TeamMember
             image={Kotryna}
             name={"Kotryna"}
@@ -35,8 +35,8 @@ const About = () => {
             
             Join Alice for a transformative Pilates experience and achieve your fitness goals while feeling your best. Her classes are perfect for improving posture, building strength, and unwinding after a long day. With Alice's infectious passion for Pilates, you're sure to leave her class feeling inspired and motivated.`}
           />
-        </section>
-      </div>
+        </div>
+      </section>
     </Card>
   );
 };

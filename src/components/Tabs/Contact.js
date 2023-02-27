@@ -11,7 +11,7 @@ import InstagramPic from "../../images/instagram-round-line.svg";
 const Contacts = () => {
   return (
     <Card>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <h1 className="section-header">CONTACT</h1>
 
         <h3 id={styles.title}>
@@ -46,7 +46,7 @@ const Contacts = () => {
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-      </div>
+      </section>
     </Card>
   );
 };

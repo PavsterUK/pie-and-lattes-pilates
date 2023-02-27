@@ -12,7 +12,7 @@ import RoundedPinkBox from "../GUI/RoundedPinkBox";
 const Pricing = () => {
   return (
     <Card>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <RoundedPinkBox>
           <h1 className="section-header" >Where To Begin?</h1>
           <h3>
@@ -202,7 +202,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Card>
   );
 };
