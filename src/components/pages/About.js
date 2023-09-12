@@ -1,10 +1,10 @@
 import React from "react";
 
 import styles from "./About.module.css";
-import Card from "../GUI/Card";
+import Card from "../ui/Card";
 import Kotryna from "../../images/Ingrida2.JPG";
 import Alice from "../../images/Alice2.jpg";
-import TeamMember from "../GUI/TeamMember";
+import TeamMember from "../ui/TeamMember";
 
 const About = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Contact.module.css";
-import Card from "../GUI/Card";
+import Card from "../ui/Card";
 import EmailPic from "../../images/email-symbol.svg";
 import PhonePic from "../../images/phone-line.svg";
 import LocationPic from "../../images/address-location.svg";

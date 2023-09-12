@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "../GUI/Card";
-import ProductCard from "../GUI/ProductCard";
+import Card from "../ui/Card";
+import ProductCard from "../ui/ProductCard";
 import TimeAndDate from "../../images/calendar-and-time.svg";
 import OnePerson from "../../images/one-person.svg";
 import ThreePerson from "../../images/team.svg";
 import ScrollRightImg from "../../images/scroll-right.svg";
 
 import styles from "./Pricing.module.css";
-import RoundedPinkBox from "../GUI/RoundedPinkBox";
+import RoundedPinkBox from "../ui/RoundedPinkBox";
 
 const Pricing = () => {
   return (
