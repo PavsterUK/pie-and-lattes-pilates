@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Navigation/Header";
-import Navbar from "./components/Navigation/Navbar";
-import Sidebar from "./components/Navigation/Sidebar";
-import Home from "./components/Tabs/Home";
-import WhatsReformer from "./components/Tabs/WhatsReformer";
-import Pricing from "./components/Tabs/Pricing";
-import Footer from "./components/Navigation/Footer";
-import Contacts from "./components/Tabs/Contact";
-import About from "./components/Tabs/About";
-import "./components/Navigation/Sidebar.css";
+import Header from "./components/navigation/Header";
+import Navbar from "./components/navigation/Navbar";
+import Sidebar from "./components/navigation/Sidebar";
+import Home from "./components/pages/Home";
+import WhatsReformer from "./components/pages/WhatsReformer";
+import Pricing from "./components/pages/Pricing";
+import Footer from "./components/navigation/Footer";
+import Contacts from "./components/pages/Contact";
+import About from "./components/pages/About";
+import "./components/navigation/Sidebar.css";
 
 function App() {
   return (

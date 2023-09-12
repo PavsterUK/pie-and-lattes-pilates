@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
-import Card from "../GUI/Card";
+import Card from "../ui/Card";
 
 const Welcome = () => {
   return (

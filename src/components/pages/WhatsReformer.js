@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "../GUI/Card";
+import Card from "../ui/Card";
 import styles from "./WhatsReformer.module.css";
 import funny from "../../images/funny.jpeg";
 //import reformer from "../../images/Reformer Photo.jpg";
