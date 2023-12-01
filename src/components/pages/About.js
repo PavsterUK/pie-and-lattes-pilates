@@ -1,7 +1,6 @@
 import React from "react";
 
 import styles from "./About.module.css";
-import Card from "../ui/Card";
 import Kotryna from "../../images/Ingrida2.JPG";
 import Alice from "../../images/Alice2.jpg";
 import Nadya from "../../images/nadya.jpg";
