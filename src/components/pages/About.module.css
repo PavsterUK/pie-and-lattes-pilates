@@ -1,18 +1,19 @@
 .container {
-  width: 60vw;
-  height: 100vh;
-  padding: .5rem;
-}
-
-@media only screen and (max-width: 1000px) {
-  .container {
-    width: 97vw;
-  }
+  width: 90vw;
+  min-height: 100vh;
+  height: fit-content;
+  padding: 0.5rem;
+  background-color: #fefefee7;
 }
 
 .teamMembersWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5em;
-  
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 97vw;
+  }
 }

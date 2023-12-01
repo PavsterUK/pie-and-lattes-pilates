@@ -4,7 +4,7 @@
   padding: 1em 0 1em 0;
   background: rgba(211, 211, 211, 0.449);
   font-family: Lato;
-  height: fit-content;
+  height: 100%;
 }
 
 .wrapper h2 {

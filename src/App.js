@@ -13,23 +13,21 @@ import "./components/navigation/Sidebar.css";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <div className="main-wrapper">
-          <Header />
-          <Sidebar />
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/whats-reformer" element={<WhatsReformer />} />
-            <Route path="/pricing-bookings" element={<Pricing />} />
-            <Route path="/contact" element={<Contacts />} />
-            <Route path="/our-team" element={<About />} />
-          </Routes>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <div className="main-wrapper">
+        <Header />
+        <Sidebar />
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/whats-reformer" element={<WhatsReformer />} />
+          <Route path="/pricing-bookings" element={<Pricing />} />
+          <Route path="/contact" element={<Contacts />} />
+          <Route path="/our-team" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
