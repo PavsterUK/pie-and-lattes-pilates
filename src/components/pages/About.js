@@ -46,7 +46,7 @@ const About = () => {
           
           In Amanda’s classes, you are not just practicing Pilates; you are embarking on a journey of self-discovery and transformation. She creates a nurturing environment where every breath and movement brings you closer to your inner self, fostering a mind-body connection that is both empowering and healing.
           
-          Join Amanda and experience a practice where challenge meets tranquility, where each session is an opportunity to learn, grow, and connect—deeply and authentically—with yourself.`}
+          Join Amanda and experience a practice where challenge meets tranquility,  where each session is an opportunity to learn, grow, and connect—deeply and authentically—with yourself.`}
         />
       </div>
     </section>
