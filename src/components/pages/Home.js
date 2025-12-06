@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PageHero from "../ui/PageHero";
 import studioImage from "../../images/studio.jpg";
 import styles from "./Home.module.css";
+import FloatingShapes from "../ui/3d/FloatingShapes";
 
 const Home = () => {
   return (
@@ -17,17 +18,20 @@ const Home = () => {
         </Link>
       </PageHero>
 
-      <section className={`container ${styles.aboutSection}`}>
-        <h2>More Than Just a Workout</h2>
-        <p>
-          <strong>Feeling stiff, stressed, or struggling with back pain?</strong> You’re not alone.
-          Modern life takes a toll on our bodies, leaving us disconnected and tight.
-        </p>
-        <p>
-          At our Keynsham studio, we don't just "exercise." We rebuild. Using professional Reformer equipment,
-          we help you restore your posture, regain your strength, and finally feel at home in your body again.
-          With classes capped at just 3 people, you'll never get lost in the crowd.
-        </p>
+      <section className={`container ${styles.aboutSection}`} style={{ position: 'relative' }}>
+        <FloatingShapes />
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <h2>More Than Just a Workout</h2>
+          <p>
+            <strong>Feeling stiff, stressed, or struggling with back pain?</strong> You’re not alone.
+            Modern life takes a toll on our bodies, leaving us disconnected and tight.
+          </p>
+          <p>
+            At our Keynsham studio, we don't just "exercise." We rebuild. Using professional Reformer equipment,
+            we help you restore your posture, regain your strength, and finally feel at home in your body again.
+            With classes capped at just 3 people, you'll never get lost in the crowd.
+          </p>
+        </div>
       </section>
 
       <section className={styles.features}>
