@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PageHero.module.css';
 
-const PageHero = ({ image, title, subtitle }) => {
+const PageHero = ({ image, title, subtitle, children }) => {
     return (
         <div className={styles.hero}>
             <img src={image} alt={title} className={styles.heroImage} />
@@ -9,6 +9,7 @@ const PageHero = ({ image, title, subtitle }) => {
             <div className={styles.heroContent}>
                 <h1 className={styles.heroTitle}>{title}</h1>
                 {subtitle && <p className={styles.heroSubtitle}>{subtitle}</p>}
+                {children}
             </div>
         </div>
     );

@@ -1,20 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./WhatsReformer.module.css";
+import PageHero from "../ui/PageHero";
 import reformer from "../../images/pilates-machine.jpg";
 
 const WhatsReformer = () => {
   return (
     <div className={styles.pageWrapper}>
       {/* Hero Section */}
-      <div className={styles.hero}>
-        <img src={reformer} alt="Pilates Reformer Machine" className={styles.heroImage} />
-        <div className={styles.heroOverlay}></div>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>The Reformer</h1>
-          <p className={styles.heroSubtitle}>Versatile. Supportive. Transformative.</p>
-        </div>
-      </div>
+      <PageHero
+        title="The Reformer"
+        subtitle="Versatile. Supportive. Transformative."
+        image={reformer}
+      />
 
       {/* Intro Section */}
       <section className={styles.section}>

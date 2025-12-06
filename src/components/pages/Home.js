@@ -1,19 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PageHero from "../ui/PageHero";
+import studioImage from "../../images/studio.jpg";
 import styles from "./Home.module.css";
 
 const Home = () => {
   return (
     <>
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Reclaim Your Body</h1>
-          <p className={styles.heroSubtitle}>Move without pain. Build resilience. Find your balance.</p>
-          <Link to="/pricing-bookings">
-            <button className="btn">Start Your Journey Today</button>
-          </Link>
-        </div>
-      </section>
+      <PageHero
+        title="Reclaim Your Body"
+        subtitle="Move without pain. Build resilience. Find your balance."
+        image={studioImage}
+      >
+        <Link to="/pricing-bookings">
+          <button className="btn">Start Your Journey Today</button>
+        </Link>
+      </PageHero>
 
       <section className={`container ${styles.aboutSection}`}>
         <h2>More Than Just a Workout</h2>
