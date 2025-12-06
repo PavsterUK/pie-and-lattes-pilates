@@ -1,17 +1,87 @@
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
-    background-color: #064420;
-    color: #faf1e6;
-    font-size: 1em;
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: var(--spacing-lg) 0 var(--spacing-md) 0;
     margin-top: auto;
 }
 
-.container img {
-    margin-top: .5em;
-    height: 3em;
-    margin-left: 1em;
+.footer p {
+    color: var(--color-secondary);
+    opacity: 0.9;
 }
 
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.footerSection {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footerTitle {
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.link {
+    display: block;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xs);
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.link:hover {
+    opacity: 1;
+    color: var(--color-white);
+}
+
+.socialLinks {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.socialIcon {
+    width: 24px;
+    height: 24px;
+    /* Removed filter to show original icon colors */
+    transition: transform 0.3s;
+}
+
+.socialIcon:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+.legal {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.legalLink {
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.legalLink:hover {
+    opacity: 1;
+    text-decoration: underline;
+}

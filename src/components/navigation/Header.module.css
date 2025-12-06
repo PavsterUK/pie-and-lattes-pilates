@@ -1,33 +1,207 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Subtle tint for blur visibility */
+  backdrop-filter: blur(8px);
+  /* Blur effect */
+  -webkit-backdrop-filter: blur(8px);
+  /* Safari support */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.4s ease;
+}
+
+.header.scrolled {
+  background-color: var(--color-primary);
+  /* Solid Sage Green */
+  box-shadow: var(--shadow-sm);
+  padding: 0.5rem 0;
+}
+
 .container {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #064420;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.logo {
+  height: 200px;
+  /* Big transparent size */
+  width: auto;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  /* Shadow for visibility on images */
+}
+
+/* Scrolled State for Logo */
+.header.scrolled .logo {
+  height: 60px;
+  /* Sleek navbar size */
+  filter: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList a {
+  color: var(--color-white);
+  /* Always white for visibility on hero */
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: 5px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  /* Text shadow for transparency */
+}
+
+.header.scrolled .navList a {
+  color: var(--color-secondary);
+  /* Cream on solid bar */
+  text-shadow: none;
+}
+
+.navList a:hover,
+.navList a.active {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.navList a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.navList a:hover::after,
+.navList a.active::after {
+  width: 100%;
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: var(--color-primary);
+    /* Always solid on mobile for readability */
+    position: sticky;
+    padding: 0.5rem 0;
   }
 
-  .logo_title {
-    display: flex;
+  .logo {
+    height: 50px;
+    /* Smaller mobile logo */
+  }
+
+  .mobileMenuBtn {
+    display: block;
+    z-index: 1002;
+  }
+
+  .hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    position: relative;
+    transition: background-color 0.3s;
+  }
+
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-secondary);
+    transition: transform 0.3s, top 0.3s, bottom 0.3s;
+  }
+
+  .hamburger::before {
+    top: -8px;
+  }
+
+  .hamburger::after {
+    bottom: -8px;
+  }
+
+  .hamburger.active {
+    background-color: transparent;
+  }
+
+  .hamburger.active::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--color-primary);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.3s ease;
+    z-index: 1001;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .navList {
     flex-direction: column;
     align-items: center;
-    padding: 0.5em;
+    gap: 2rem;
   }
-  
-  .logo_title p {
-    font-family: "Architects_Daughter", cursive;
-    color: #faf1e6;
-    letter-spacing: 0.1em;
-    text-align: center;
-    margin: .7em 0 0 0 ;
-    font-size: .8em;
-    text-transform: capitalize;
-  
+
+  .navList a {
+    text-shadow: none;
+    color: var(--color-secondary);
   }
-  
-  .logo_title img {
-    margin: 0;
-    height: 100%;
-    height: 4em;
-  }
+}

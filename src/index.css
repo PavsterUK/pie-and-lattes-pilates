@@ -1,93 +1,152 @@
+/* Modern Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette - Premium & Calm */
+  --color-primary: #4A5D4F; /* Deep Sage Green */
+  --color-primary-light: #6B8272;
+  --color-secondary: #FDFBF7; /* Soft Cream */
+  --color-accent: #D4AF37; /* Muted Gold */
+  --color-text-main: #333333; /* Charcoal */
+  --color-text-light: #666666;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-heading: 'Bodoni', 'Playfair Display', serif;
+  --font-body: 'Lato', 'Raleway', sans-serif;
+  --font-accent: 'Architects_Daughter', cursive;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 @font-face {
   font-family: "Architects_Daughter";
   src: local("Architects_Daughter"),
     url("./fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf")
       format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Lato";
   src: local("Lato"), url("./fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway";
   src: local("Raleway"),
     url("./fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Bodoni";
   src: local("Bodoni"),
-    url("./fonts/Bodoni/Bodoni\ Sans\ Text\ Regular.otf") format("truetype");
+    url("./fonts/Bodoni/Bodoni Sans Text Regular.otf") format("truetype");
+  font-display: swap;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 100%;
-  height: fit-content;
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-secondary);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  display: flex;
-}
-
-a,
-a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-.main-wrapper {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: fit-content;
-  min-height: 100vh;
-  background-color: #fdfaf6;
-  background-image: url(./images/studio.jpg);
-  background-size: cover;
-  background-position: 50% 80%;
-}
-
-.row,
-.column {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.align-center {
-  align-items: center;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
 }
 
 h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-light);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  font-family: Lato;
+  padding: 0 var(--spacing-md);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  color: var(--color-white);
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
   display: flex;
   justify-content: center;
-  position: relative;
-  width: fit-content;
-  margin-bottom: 1em;
+  align-items: center;
 }
 
-.section-header {
-  text-transform: uppercase;
-  font-size: 2rem;
-}
-
-.section-header::after {
-  content: "";
-  content: "";
-  display: block;
-  border-bottom: 4px solid black;
-  position: absolute;
-  bottom: -5px;
-  width: 70%;
-}

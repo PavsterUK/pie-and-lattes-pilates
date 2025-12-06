@@ -1,0 +1,146 @@
+.pageWrapper {
+    padding-bottom: 4rem;
+}
+
+.introSection {
+    padding: 6rem 1.5rem 4rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+.introTitle {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.introText {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--color-text-main);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.classesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.classCard {
+    background-color: var(--color-white);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid transparent;
+}
+
+.classCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
+}
+
+.cardTitle {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.cardSubtitle {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cardDescription {
+    font-family: var(--font-body);
+    color: var(--color-text-main);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.cardFeatures {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.cardFeatures li {
+    font-family: var(--font-body);
+    color: var(--color-text-main);
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.cardFeatures li::before {
+    content: "•";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.faqSection {
+    background-color: var(--color-secondary);
+    /* Soft Cream */
+    padding: 4rem 1.5rem;
+    margin-top: 4rem;
+    border-radius: 8px;
+}
+
+.faqTitle {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faqGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faqItem h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.faqItem p {
+    font-family: var(--font-body);
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .introTitle {
+        font-size: 2.5rem;
+    }
+
+    .cardTitle {
+        font-size: 1.8rem;
+    }
+}

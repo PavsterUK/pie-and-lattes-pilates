@@ -1,157 +1,110 @@
-.container {
-  max-width: 100%;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/studio.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
   align-items: center;
-  padding: 0;
-}
-
-/* greeter colors */
-.greeter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2em;
-  width: 97vw;
+  justify-content: center;
   text-align: center;
-  padding: 1em;
-  border-radius: 5px;
-  color: #012730;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
 }
 
-.greeter h1 {
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  font-size: 3em;
-  font-family: "Raleway", sans-serif;
-  animation: myAnim 1s ease 0s 1 normal forwards;
+.heroContent {
+  max-width: 800px;
+  padding: 0 20px;
 }
 
-.greeter p {
-  font-family: "Raleway", sans-serif;
-  width: 60%;
-  margin: 1em 0 0 0;
-  padding: 0;
-  font-size: 1.7em;
-  font-weight: bold;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-delay: 1s;
+.heroTitle {
+  color: var(--color-white);
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.greeter h4 {
-  width: 60%;
-  font-size: 1.5em;
-  font-family: "Raleway", sans-serif;
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-secondary);
 }
 
-.greeter a {
-  width: 100%;
+.features {
+  padding: var(--spacing-lg) 0;
+  background-color: var(--color-secondary);
 }
 
-.greeter button {
-  text-decoration: none;
-  border: none;
-  padding: 0.7em 2em 0.7em 2em;
-  margin: 1.5em 0 0em 0em;
-  border-radius: 5px;
-  font-size: 1.5em;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-transform: capitalize;
-  background-color: #064420;
-  color: #faf1e6;
-  -webkit-box-shadow: 5px 6px 3px -2px #000000;
-  box-shadow: 5px 6px 3px -2px #000000;
-
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-delay: 2s;
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 
-.greeter button:hover {
-  background-color: #0c6431;
-  transform: scale(1.5);
+.featureCard {
+  background: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.greeter button:active {
-  font-size: 1.4em;
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
 
-/* Media Queries */
+.featureTitle {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
 
-@media only screen and (max-width: 800px) {
-  .greeter {
-    margin-top: 2em;
-    padding: 0;
+.aboutSection {
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaSection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+.ctaTitle {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.ctaText {
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+}
+
+.btnSecondary {
+  background-color: var(--color-accent);
+  color: var(--color-text-main);
+}
+
+.btnSecondary:hover {
+  background-color: #e5c158;
+  /* lighter gold */
+  color: var(--color-text-main);
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
   }
 
-  .greeter h1 {
-    font-size: 2em;
-  }
-
-  .greeter p {
-    font-size: 1.3em;
-    width: 80%;
-  }
-
-  .greeter button {
-    padding: 0.5em 1.5em 0.5em 1.5em;
-    font-size: 1em;
-    width: 50%;
-  }
-
-  .greeter button:active {
-    font-size: 0.9em;
-  }
-}
-
-/* Animations */
-
-@keyframes myAnim {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+  .hero {
+    height: 60vh;
   }
 }
