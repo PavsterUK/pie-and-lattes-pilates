@@ -10,8 +10,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0.5rem 0;
-  /* Reduced padding */
+  padding: 1rem 0;
   transition: all 0.4s ease;
 }
 
@@ -19,8 +18,7 @@
   background-color: var(--color-primary);
   /* Solid Sage Green */
   box-shadow: var(--shadow-sm);
-  padding: 0.25rem 0;
-  /* Minimal padding when scrolled */
+  padding: 0.5rem 0;
 }
 
 .container {
@@ -36,35 +34,20 @@
   display: flex;
   align-items: center;
   transition: all 0.4s ease;
-  position: relative;
-  /* Anchor for hanging logo */
-  width: 150px;
-  /* Reserve width */
-  height: 50px;
-  /* Reserve height for bar flow */
 }
 
 .logo {
   height: 200px;
-  /* Keep it huge */
+  /* Big transparent size */
   width: auto;
-  position: absolute;
-  /* Take out of flow */
-  top: -20px;
-  /* Position it nicely */
-  left: 0;
   transition: all 0.4s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-  pointer-events: none;
-  /* Let clicks pass through if it covers stuff? No, logo should be clickable. */
-  pointer-events: auto;
+  /* Shadow for visibility on images */
 }
 
 /* Scrolled State for Logo */
 .header.scrolled .logo {
-  height: 50px;
-  top: 0;
-  /* Align with container */
+  height: 60px;
   /* Sleek navbar size */
   filter: none;
 }
