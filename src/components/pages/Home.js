@@ -8,7 +8,8 @@ const Home = () => {
   return (
     <>
       <PageHero
-        title="Reclaim Your Body"
+        title="Keynsham Reformer Pilates Studio
+"
         subtitle="Move without pain. Build resilience. Find your balance."
         image={studioImage}
       >
