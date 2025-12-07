@@ -29,27 +29,29 @@ const Pricing = () => {
 
                 <section className={styles.pricingSection}>
                     <h2 className={styles.sectionTitle}>First-Time Clients</h2>
-                    <div className={styles.grid}>
-                        <div className={`${styles.card} ${styles.highlight}`}>
-                            <span className={styles.highlightLabel}>Recommended</span>
-                            <h3 className={styles.cardTitle}>Taster Session</h3>
-                            <div className={styles.price}>£33</div>
-                            <p className={styles.cardDesc}>
-                                A 55-minute one-to-one class to assess your needs and introduce you to our studio.
-                            </p>
-                            <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
-                                <button className={`btn ${styles.bookBtn}`}>Book Taster</button>
-                            </a>
-                        </div>
-                        <div className={styles.card}>
-                            <h3 className={styles.cardTitle}>Starter Pack</h3>
-                            <div className={styles.price}>£85</div>
-                            <p className={styles.cardDesc}>
-                                Includes two private sessions to kickstart your journey.
-                            </p>
-                            <a href="https://buy.stripe.com/fZe6pm4STbaWeKQbJ4" target="_blank" rel="noopener noreferrer">
-                                <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
-                            </a>
+                    <div className={styles.pricingGroup}>
+                        <div className={styles.groupGrid}>
+                            <div className={`${styles.card} ${styles.highlight}`}>
+                                <span className={styles.highlightLabel}>Recommended</span>
+                                <h3 className={styles.cardTitle}>Taster Session</h3>
+                                <div className={styles.price}>£33</div>
+                                <p className={styles.cardDesc}>
+                                    A 55-minute one-to-one class to assess your needs and introduce you to our studio.
+                                </p>
+                                <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
+                                    <button className={`btn ${styles.bookBtn}`}>Book Taster</button>
+                                </a>
+                            </div>
+                            <div className={styles.card}>
+                                <h3 className={styles.cardTitle}>Starter Pack</h3>
+                                <div className={styles.price}>£85</div>
+                                <p className={styles.cardDesc}>
+                                    Includes two private sessions to kickstart your journey.
+                                </p>
+                                <a href="https://buy.stripe.com/fZe6pm4STbaWeKQbJ4" target="_blank" rel="noopener noreferrer">
+                                    <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>

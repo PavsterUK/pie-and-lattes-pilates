@@ -141,16 +141,18 @@
 }
 
 .pricingGroup {
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(74, 93, 79, 0.1);
-  /* Subtle Sage border */
+  background-color: rgba(74, 93, 79, 0.12);
+  /* More visible Sage */
+  border: 1px solid rgba(74, 93, 79, 0.2);
+  /* Stronger border */
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .pricingGroup:hover {
-  background-color: var(--color-white);
+  background-color: rgba(74, 93, 79, 0.18);
+  /* Darkens slightly on hover */
   border-color: var(--color-accent);
   box-shadow: var(--shadow-sm);
 }

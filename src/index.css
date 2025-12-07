@@ -1,17 +1,27 @@
 /* Modern Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 :root {
   /* Color Palette - Premium & Calm */
-  --color-primary: #4A5D4F; /* Deep Sage Green */
+  --color-primary: #4A5D4F;
+  /* Deep Sage Green */
   --color-primary-light: #6B8272;
-  --color-secondary: #FDFBF7; /* Soft Cream */
-  --color-accent: #D4AF37; /* Muted Gold */
-  --color-text-main: #333333; /* Charcoal */
+  --color-secondary: #FDFBF7;
+  /* Soft Cream */
+  --color-accent: #D4AF37;
+  /* Muted Gold */
+  --color-text-main: #333333;
+  /* Charcoal */
   --color-text-light: #666666;
   --color-white: #FFFFFF;
 
@@ -28,15 +38,14 @@
   --spacing-xl: 8rem;
 
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @font-face {
   font-family: "Architects_Daughter";
   src: local("Architects_Daughter"),
-    url("./fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf")
-      format("truetype");
+    url("./fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -67,9 +76,16 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Prevent mobile menu scroll */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 400;
   color: var(--color-primary);
@@ -150,3 +166,22 @@ a:hover {
   align-items: center;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(74, 93, 79, 0.5);
+  /* Semi-transparent Sage */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
+  /* Solid Sage on hover */
+}
