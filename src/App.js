@@ -9,11 +9,13 @@ import Contacts from "./components/pages/Contact";
 import About from "./components/pages/About";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import Classes from "./components/pages/Classes";
+import GlobalBackground from "./components/ui/3d/GlobalBackground";
 
 function App() {
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="main-wrapper">
+        <GlobalBackground />
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
