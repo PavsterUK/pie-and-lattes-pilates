@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageHero from "../ui/PageHero";
 import studioImage from "../../images/studio.jpg";
 import styles from "./Home.module.css";
@@ -13,9 +12,9 @@ const Home = () => {
         subtitle="Move without pain. Build resilience. Find your balance."
         image={studioImage}
       >
-        <Link to="/pricing-bookings">
-          <button className="btn">Start Your Journey Today</button>
-        </Link>
+        <a href="https://app.squarespacescheduling.com/schedule/39d8394f" target="_blank" rel="noopener noreferrer">
+          <button className="btn">Book Now</button>
+        </a>
       </PageHero>
 
       <section className={`container ${styles.aboutSection}`}>
@@ -55,9 +54,9 @@ const Home = () => {
         <div className="container">
           <h2 className={styles.ctaTitle}>Don't Wait to Feel Better</h2>
           <p className={styles.ctaText}>Your first step towards a stronger, pain-free body is just a click away.</p>
-          <Link to="/pricing-bookings">
-            <button className={`btn ${styles.btnSecondary}`}>View Pricing & Book</button>
-          </Link>
+          <a href="https://app.squarespacescheduling.com/schedule/39d8394f" target="_blank" rel="noopener noreferrer">
+            <button className={`btn ${styles.btnSecondary}`}>Book Now</button>
+          </a>
         </div>
       </section>
     </>

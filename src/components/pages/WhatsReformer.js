@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./WhatsReformer.module.css";
 import PageHero from "../ui/PageHero";
 import reformer from "../../images/pilates-machine.jpg";
@@ -59,9 +58,9 @@ const WhatsReformer = () => {
         <p className={styles.ctaText}>
           Experience the benefits for yourself. Book a Taster Session today.
         </p>
-        <Link to="/pricing-bookings">
+        <a href="https://app.squarespacescheduling.com/schedule/39d8394f" target="_blank" rel="noopener noreferrer">
           <button className="btn">Book Now</button>
-        </Link>
+        </a>
       </section>
     </div>
   );

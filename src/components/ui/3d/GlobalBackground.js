@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useMemo, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Sphere, Float, MeshDistortMaterial } from '@react-three/drei';
 import * as THREE from 'three';
@@ -47,15 +47,28 @@ const BalloonField = () => {
         return items;
     }, []);
 
-    useFrame((state) => {
-        const { mouse } = state;
-        if (group.current) {
-            // Parallax tilt - subtle
-            const targetX = (mouse.x || 0) * 0.5;
-            const targetY = (mouse.y || 0) * 0.5;
+    // Manual mouse tracking because pointerEvents: none blocks canvas events
+    const mouse = useRef({ x: 0, y: 0 });
 
-            group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, -targetY * 0.02, 0.05);
-            group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, targetX * 0.02, 0.05);
+    useEffect(() => {
+        const handleMouseMove = (event) => {
+            // Normalize mouse position to -1 to 1
+            mouse.current.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        };
+
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
+    useFrame(() => {
+        if (group.current) {
+            // Parallax tilt - More responsive
+            const targetX = mouse.current.x * 1.5; // Increased range
+            const targetY = mouse.current.y * 1.5; // Increased range
+
+            group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, -targetY * 0.05, 0.1); // Faster smooth
+            group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, targetX * 0.05, 0.1); // Faster smooth
         }
     });
 

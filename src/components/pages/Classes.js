@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import PageHero from '../ui/PageHero';
 import styles from './Classes.module.css';
 import heroImage from '../../images/classes_hero.png';
@@ -42,9 +42,9 @@ const Classes = () => {
                             <li>Ideal for injury rehab</li>
                             <li>Flexible scheduling</li>
                         </ul>
-                        <Link to="/contact">
-                            <button className="btn">Inquire Now</button>
-                        </Link>
+                        <a href="https://app.squarespacescheduling.com/schedule/39d8394f/appointment/30471050/calendar/any" target="_blank" rel="noopener noreferrer">
+                            <button className="btn">Book Now</button>
+                        </a>
                     </div>
 
                     {/* Duet Session Card */}
@@ -61,9 +61,9 @@ const Classes = () => {
                             <li>Shared goals & progress</li>
                             <li>Interactive & fun</li>
                         </ul>
-                        <Link to="/contact">
-                            <button className="btn">Book Together</button>
-                        </Link>
+                        <a href="https://app.squarespacescheduling.com/schedule/39d8394f/appointment/30471057/calendar/any" target="_blank" rel="noopener noreferrer">
+                            <button className="btn">Book Now</button>
+                        </a>
                     </div>
 
                     {/* Small Group Card */}
@@ -80,9 +80,9 @@ const Classes = () => {
                             <li>Structured progression</li>
                             <li>Most affordable option</li>
                         </ul>
-                        <Link to="/pricing-bookings">
-                            <button className="btn">View Schedule</button>
-                        </Link>
+                        <a href="https://app.squarespacescheduling.com/schedule/39d8394f/appointment/30469828/calendar/any" target="_blank" rel="noopener noreferrer">
+                            <button className="btn">Book Now</button>
+                        </a>
                     </div>
                 </div>
             </section>

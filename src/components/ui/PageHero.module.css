@@ -38,7 +38,7 @@
     max-width: 800px;
     padding: var(--spacing-lg) var(--spacing-md);
     /* More padding */
-    padding-top: 120px;
+    padding-top: 250px;
     /* Push text down below blurred header */
 }
 

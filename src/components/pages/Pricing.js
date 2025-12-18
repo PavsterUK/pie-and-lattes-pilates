@@ -143,10 +143,10 @@ const Pricing = () => {
                 </section>
 
                 <section className={styles.bookingSection}>
-                    <h2 className={styles.bookingTitle}>Ready to Book a Time?</h2>
+                    <h2 className={styles.bookingTitle}>Ready to book your class or session?</h2>
                     <p className={styles.bookingText}>You can view our full schedule and book your slot directly.</p>
                     <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
-                        <button className="btn">View Schedule</button>
+                        <button className={`btn ${styles.bookingBtn}`}>View Schedule</button>
                     </a>
                 </section>
             </div>

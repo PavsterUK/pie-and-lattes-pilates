@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import EmailPic from "../../images/email-symbol.svg";
-import PhonePic from "../../images/phone-line.svg";
-import LocationPic from "../../images/address-location.svg";
-import FacebookPic from "../../images/facebook-round-line.svg";
-import InstagramPic from "../../images/instagram-round-line.svg";
+import { MapPin, Mail, Phone, Facebook, Instagram } from "lucide-react";
 import PageHero from "../ui/PageHero";
 import contactHero from "../../images/contact_hero.png";
 
@@ -22,7 +18,9 @@ const Contact = () => {
         <div className={styles.contentWrapper}>
           <section className={styles.infoSection}>
             <div className={styles.infoBlock}>
-              <img className={styles.icon} src={LocationPic} alt="Location" />
+              <div className={styles.iconWrapper}>
+                <MapPin className={styles.icon} size={32} />
+              </div>
               <h3 className={styles.label}>Address</h3>
               <p className={styles.value}>
                 23a High Street<br />
@@ -31,7 +29,9 @@ const Contact = () => {
             </div>
 
             <div className={styles.infoBlock}>
-              <img className={styles.icon} src={EmailPic} alt="Email" />
+              <div className={styles.iconWrapper}>
+                <Mail className={styles.icon} size={32} />
+              </div>
               <h3 className={styles.label}>Email</h3>
               <p className={styles.value}>
                 <a href="mailto:pieandlattesstudio@gmail.com" className={styles.link}>
@@ -41,7 +41,9 @@ const Contact = () => {
             </div>
 
             <div className={styles.infoBlock}>
-              <img className={styles.icon} src={PhonePic} alt="Phone" />
+              <div className={styles.iconWrapper}>
+                <Phone className={styles.icon} size={32} />
+              </div>
               <h3 className={styles.label}>Phone</h3>
               <p className={styles.value}>
                 <a href="tel:+447884788700" className={styles.link}>
@@ -51,11 +53,11 @@ const Contact = () => {
             </div>
 
             <div className={styles.socialMedia}>
-              <a href="https://www.facebook.com/PieandLattesPilatesStudio/" target="_blank" rel="noopener noreferrer">
-                <img className={styles.socialIcon} src={FacebookPic} alt="Facebook" />
+              <a href="https://www.facebook.com/PieandLattesPilatesStudio/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <Facebook className={styles.socialIcon} size={28} />
               </a>
-              <a href="https://www.instagram.com/pienadlattes_pilates_studio/" target="_blank" rel="noopener noreferrer">
-                <img className={styles.socialIcon} src={InstagramPic} alt="Instagram" />
+              <a href="https://www.instagram.com/pienadlattes_pilates_studio/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <Instagram className={styles.socialIcon} size={28} />
               </a>
             </div>
           </section>

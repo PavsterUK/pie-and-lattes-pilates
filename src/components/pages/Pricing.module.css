@@ -133,6 +133,11 @@
   width: 100%;
 }
 
+.bookingBtn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
 /* Grouping Styles */
 .groupsContainer {
   display: flex;
