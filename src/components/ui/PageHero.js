@@ -4,7 +4,14 @@ import styles from './PageHero.module.css';
 const PageHero = ({ image, title, subtitle, children }) => {
     return (
         <div className={styles.hero}>
-            <img src={image} alt={title} className={styles.heroImage} />
+            <img
+                src={image}
+                alt={title}
+                className={styles.heroImage}
+                loading="eager"
+                fetchPriority="high"
+                decoding="sync"
+            />
             <div className={styles.heroOverlay}></div>
             <div className={styles.heroContent}>
                 <h1 className={styles.heroTitle}>{title}</h1>
