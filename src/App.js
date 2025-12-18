@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/navigation/Header";
 import Footer from "./components/navigation/Footer";
@@ -12,6 +12,17 @@ const Contacts = React.lazy(() => import("./components/pages/Contact"));
 const About = React.lazy(() => import("./components/pages/About"));
 const TermsAndConditions = React.lazy(() => import("./components/pages/TermsAndConditions"));
 const Classes = React.lazy(() => import("./components/pages/Classes"));
+
+// Preload all pages in the background after initial render
+const preloadAllPages = () => {
+  import("./components/pages/Home");
+  import("./components/pages/WhatsReformer");
+  import("./components/pages/Pricing");
+  import("./components/pages/Contact");
+  import("./components/pages/About");
+  import("./components/pages/TermsAndConditions");
+  import("./components/pages/Classes");
+};
 
 // Simple loading fallback
 const PageLoader = () => (
@@ -27,6 +38,13 @@ const PageLoader = () => (
 );
 
 function App() {
+  // Preload all pages after the app mounts
+  useEffect(() => {
+    // Small delay to prioritize initial page render
+    const timer = setTimeout(preloadAllPages, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="main-wrapper">
