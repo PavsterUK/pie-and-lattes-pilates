@@ -12,7 +12,7 @@ const Footer = () => {
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
             <h4 className={styles.footerTitle}>Keynsham Reformer Pilates</h4>
-            <p>High Street, Keynsham<br />Bristol, UK</p>
+            <p>25 Temple Street<br />Keynsham, BS31 1HF</p>
           </div>
 
           <div className={styles.footerSection}>
