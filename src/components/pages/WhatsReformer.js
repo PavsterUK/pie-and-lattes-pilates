@@ -59,8 +59,8 @@ const WhatsReformer = () => {
         <p className={styles.ctaText}>
           Experience the benefits for yourself. Book a Taster Session today.
         </p>
-        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-          <button className="btn">Book Now</button>
+        <a className={`btn ${styles.ctaButton}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+          Book Online
         </a>
       </section>
     </div>

@@ -57,7 +57,7 @@
 
 .role {
   font-size: 1rem;
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -88,7 +88,7 @@
 }
 
 .showMoreBtn:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
 }
 
 .arrow {

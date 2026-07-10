@@ -17,6 +17,14 @@
   color: var(--color-text-main);
 }
 
+.policyText {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-text-main);
+  opacity: 0.9;
+}
+
 .pricingSection {
   margin-bottom: var(--spacing-xl);
 }
@@ -79,14 +87,14 @@
 .price {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
   margin: var(--spacing-sm) 0;
   font-family: var(--font-body);
 }
 
 .cardDesc {
   font-size: 0.95rem;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 0;
   flex-grow: 1;
 }
 
@@ -101,7 +109,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--color-accent);
-  color: var(--color-white);
+  color: var(--color-text-on-accent);
   padding: 4px 12px;
   border-radius: 12px;
   font-size: 0.8rem;
@@ -136,21 +144,22 @@
   margin-right: auto;
 }
 
-/* Button overrides for this page if needed */
-.bookBtn {
-  width: 100%;
-}
-
-.bookingBtn:hover {
-  background-color: #E5C158;
-  color: #203625;
-}
-
+.introBookingBtn,
 .bookingBtn {
   background-color: var(--color-accent);
-  color: #203625;
+  color: var(--color-text-on-accent);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
   font-weight: 700;
+}
+
+.introBookingBtn {
+  margin-top: var(--spacing-sm);
+}
+
+.introBookingBtn:hover,
+.bookingBtn:hover {
+  background-color: #E5C158;
+  color: var(--color-text-on-accent);
 }
 
 /* Grouping Styles */

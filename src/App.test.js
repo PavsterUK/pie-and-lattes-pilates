@@ -28,5 +28,5 @@ test('renders the pricing route directly', async () => {
   expect(await screen.findByRole('heading', {
     name: /Invest in Yourself/i,
   })).toBeInTheDocument();
-  expect(screen.getByRole('button', { name: /Book Online/i })).toBeInTheDocument();
+  expect(screen.getAllByRole('link', { name: /Book Online/i })).toHaveLength(2);
 });

@@ -62,7 +62,7 @@
     font-family: var(--font-body);
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--color-accent);
+    color: var(--color-accent-dark);
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -92,10 +92,15 @@
 
 .cardFeatures li::before {
     content: "•";
-    color: var(--color-accent);
+    color: var(--color-accent-dark);
     position: absolute;
     left: 0;
     font-weight: bold;
+}
+
+.cardButton {
+    margin-top: auto;
+    width: 100%;
 }
 
 .faqSection {

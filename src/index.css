@@ -21,6 +21,9 @@ html {
   /* Soft Cream */
   --color-accent: #D4AF37;
   /* Muted Gold */
+  --color-accent-light: #E5C158;
+  --color-accent-dark: #A47F14;
+  --color-text-on-accent: #203625;
   --color-text-main: #333333;
   /* Charcoal */
   --color-text-light: #666666;
@@ -116,7 +119,13 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
 }
 
 .main-wrapper {
@@ -134,7 +143,10 @@ a:hover {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
   padding: 12px 32px;
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -143,14 +155,24 @@ a:hover {
   letter-spacing: 1px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   font-size: 1rem;
 }
 
 .btn:hover {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-accent);
   transform: translateY(-2px);
-  color: var(--color-white);
+  color: var(--color-text-on-accent);
+  box-shadow: 0 10px 24px rgba(32, 54, 37, 0.18);
+}
+
+.btn:focus-visible {
+  color: var(--color-text-on-accent);
+  background-color: var(--color-accent);
 }
 
 .section {

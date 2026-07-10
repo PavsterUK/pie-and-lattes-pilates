@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    min-height: clamp(420px, 60vh, 680px);
+    min-height: clamp(390px, 58vh, 620px);
     width: 100%;
     margin-bottom: var(--spacing-lg);
     display: flex;
@@ -35,7 +35,7 @@
     text-align: center;
     color: var(--color-white);
     max-width: 800px;
-    padding: clamp(8rem, 16vw, 12rem) var(--spacing-md) var(--spacing-lg);
+    padding: clamp(7rem, 13vw, 10rem) var(--spacing-md) var(--spacing-lg);
 }
 
 .heroTitle {

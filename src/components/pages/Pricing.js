@@ -21,13 +21,16 @@ const Pricing = () => {
                         <br /><br />
                         <strong>New here?</strong> We highly recommend starting with a Taster Session to get comfortable with the machine and meet your teacher.
                     </p>
-                    <p className={styles.policyText} style={{ marginTop: '1.5rem', fontSize: '0.9rem', fontStyle: 'italic', opacity: 0.9 }}>
+                    <p className={styles.policyText}>
                         Please kindly note: Full advance payment is required for Taster Sessions and single appointments, payable at the time of booking.
                         <br />
                         Please be aware of the 24 hours cancellation policy.
                         <br />
                         Use our online booking page to choose a class, session, package, or gift card.
                     </p>
+                    <a className={`btn ${styles.introBookingBtn}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                        Book Online
+                    </a>
                 </section>
 
                 <section className={styles.pricingSection}>
@@ -41,9 +44,6 @@ const Pricing = () => {
                                 <p className={styles.cardDesc}>
                                     A 55-minute one-to-one class to assess your needs and introduce you to our studio.
                                 </p>
-                                <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                    <button className={`btn ${styles.bookBtn}`}>Book Taster</button>
-                                </a>
                             </div>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Starter Pack</h3>
@@ -51,9 +51,6 @@ const Pricing = () => {
                                 <p className={styles.cardDesc}>
                                     Includes two private sessions to kickstart your journey.
                                 </p>
-                                <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                    <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -72,9 +69,6 @@ const Pricing = () => {
                                     <p className={styles.cardDesc}>
                                         Single private session tailored to your specific needs and goals.
                                     </p>
-                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                        <button className={`btn ${styles.bookBtn}`}>Book Session</button>
-                                    </a>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
@@ -82,9 +76,6 @@ const Pricing = () => {
                                     <p className={styles.cardDesc}>
                                         A pack of 4 private sessions. Save £12.
                                     </p>
-                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                        <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -99,9 +90,6 @@ const Pricing = () => {
                                     <p className={styles.cardDesc}>
                                         Private session for two people. Price is total for both.
                                     </p>
-                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                        <button className={`btn ${styles.bookBtn}`}>Book Duet</button>
-                                    </a>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
@@ -109,9 +97,6 @@ const Pricing = () => {
                                     <p className={styles.cardDesc}>
                                         A pack of 4 duet sessions. Save £16.
                                     </p>
-                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                        <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -126,9 +111,6 @@ const Pricing = () => {
                                     <p className={styles.cardDesc}>
                                         Small group class (max 3 people). High attention to detail.
                                     </p>
-                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                        <button className={`btn ${styles.bookBtn}`}>Book Class</button>
-                                    </a>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
@@ -136,9 +118,6 @@ const Pricing = () => {
                                     <p className={styles.cardDesc}>
                                         A pack of 4 group classes. Save £16.
                                     </p>
-                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                                        <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -148,8 +127,8 @@ const Pricing = () => {
                 <section className={styles.bookingSection}>
                     <h2 className={styles.bookingTitle}>Ready to book your class or session?</h2>
                     <p className={styles.bookingText}>Choose a class, private session, package, or gift card on our secure booking page.</p>
-                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                        <button className={`btn ${styles.bookingBtn}`}>Book Online</button>
+                    <a className={`btn ${styles.bookingBtn}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                        Book Online
                     </a>
                 </section>
             </div>

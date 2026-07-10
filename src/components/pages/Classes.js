@@ -43,8 +43,8 @@ const Classes = () => {
                             <li>Ideal for injury rehab</li>
                             <li>Flexible scheduling</li>
                         </ul>
-                        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                            <button className="btn">Book Now</button>
+                        <a className={`btn ${styles.cardButton}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                            Book Online
                         </a>
                     </div>
 
@@ -62,8 +62,8 @@ const Classes = () => {
                             <li>Shared goals & progress</li>
                             <li>Interactive & fun</li>
                         </ul>
-                        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                            <button className="btn">Book Now</button>
+                        <a className={`btn ${styles.cardButton}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                            Book Online
                         </a>
                     </div>
 
@@ -81,8 +81,8 @@ const Classes = () => {
                             <li>Structured progression</li>
                             <li>Most affordable option</li>
                         </ul>
-                        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                            <button className="btn">Book Now</button>
+                        <a className={`btn ${styles.cardButton}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                            Book Online
                         </a>
                     </div>
                 </div>

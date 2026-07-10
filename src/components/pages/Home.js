@@ -12,8 +12,8 @@ const Home = () => {
         subtitle="Move without pain. Build resilience. Find your balance."
         image={studioImage}
       >
-        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-          <button className="btn">Book Now</button>
+        <a className="btn" href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+          Book Online
         </a>
       </PageHero>
 
@@ -54,8 +54,8 @@ const Home = () => {
         <div className="container">
           <h2 className={styles.ctaTitle}>Don't Wait to Feel Better</h2>
           <p className={styles.ctaText}>Your first step towards a stronger, pain-free body is just a click away.</p>
-          <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
-            <button className={`btn ${styles.btnSecondary}`}>Book Now</button>
+          <a className={`btn ${styles.btnSecondary}`} href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+            Book Online
           </a>
         </div>
       </section>
