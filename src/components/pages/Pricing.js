@@ -42,14 +42,14 @@ const Pricing = () => {
                                 <h3 className={styles.cardTitle}>Taster Session</h3>
                                 <div className={styles.price}>£35</div>
                                 <p className={styles.cardDesc}>
-                                    A 55-minute one-to-one class to assess your needs and introduce you to our studio.
+                                    One 55-minute private intro session. We assess your needs and show you how the Reformer works.
                                 </p>
                             </div>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Starter Pack</h3>
                                 <div className={styles.price}>£90</div>
                                 <p className={styles.cardDesc}>
-                                    Includes two private sessions to kickstart your journey.
+                                    Two private sessions for new clients. Ideal after your taster if you want extra support.
                                 </p>
                             </div>
                         </div>
@@ -67,14 +67,14 @@ const Pricing = () => {
                                     <h3 className={styles.cardTitle}>Single Session</h3>
                                     <div className={styles.price}>£68</div>
                                     <p className={styles.cardDesc}>
-                                        Single private session tailored to your specific needs and goals.
+                                        One private 1:1 session tailored to your body, needs, and goals.
                                     </p>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
                                     <div className={styles.price}>£260</div>
                                     <p className={styles.cardDesc}>
-                                        A pack of 4 private sessions. Save £12.
+                                        Four private 1:1 sessions. Works out at £65 per session and saves £12.
                                     </p>
                                 </div>
                             </div>
@@ -88,14 +88,14 @@ const Pricing = () => {
                                     <h3 className={styles.cardTitle}>Single Session</h3>
                                     <div className={styles.price}>£80</div>
                                     <p className={styles.cardDesc}>
-                                        Private session for two people. Price is total for both.
+                                        One session for two people training together. £80 total, not per person.
                                     </p>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
                                     <div className={styles.price}>£304</div>
                                     <p className={styles.cardDesc}>
-                                        A pack of 4 duet sessions. Save £16.
+                                        Four duet sessions for the pair. Works out at £76 per session and saves £16.
                                     </p>
                                 </div>
                             </div>
@@ -109,14 +109,14 @@ const Pricing = () => {
                                     <h3 className={styles.cardTitle}>Single Class</h3>
                                     <div className={styles.price}>£29</div>
                                     <p className={styles.cardDesc}>
-                                        Small group class (max 3 people). High attention to detail.
+                                        One small group class, max 3 people. £29 per person.
                                     </p>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
                                     <div className={styles.price}>£100</div>
                                     <p className={styles.cardDesc}>
-                                        A pack of 4 group classes. Save £16.
+                                        Four small group classes. Works out at £25 per class and saves £16.
                                     </p>
                                 </div>
                             </div>
