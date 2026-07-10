@@ -1,18 +1,18 @@
 import React from "react";
 import PageHero from "../ui/PageHero";
 import studioImage from "../../images/studio.jpg";
+import { VAGARO_BOOKING_URL } from "../../constants/links";
 import styles from "./Home.module.css";
 
 const Home = () => {
   return (
     <>
       <PageHero
-        title="Keynsham Reformer Pilates Studio
-"
+        title="Keynsham Reformer Pilates Studio"
         subtitle="Move without pain. Build resilience. Find your balance."
         image={studioImage}
       >
-        <a href="https://app.squarespacescheduling.com/schedule/39d8394f" target="_blank" rel="noopener noreferrer">
+        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
           <button className="btn">Book Now</button>
         </a>
       </PageHero>
@@ -54,7 +54,7 @@ const Home = () => {
         <div className="container">
           <h2 className={styles.ctaTitle}>Don't Wait to Feel Better</h2>
           <p className={styles.ctaText}>Your first step towards a stronger, pain-free body is just a click away.</p>
-          <a href="https://app.squarespacescheduling.com/schedule/39d8394f" target="_blank" rel="noopener noreferrer">
+          <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
             <button className={`btn ${styles.btnSecondary}`}>Book Now</button>
           </a>
         </div>

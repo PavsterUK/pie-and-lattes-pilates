@@ -13,9 +13,10 @@ html {
 
 :root {
   /* Color Palette - Premium & Calm */
-  --color-primary: #4A5D4F;
+  /* --color-primary: #4A5D4F; */
+  --color-primary: #064420;
   /* Deep Sage Green */
-  --color-primary-light: #6B8272;
+  --color-primary-light: #A8BEB1;
   --color-secondary: #FDFBF7;
   /* Soft Cream */
   --color-accent: #D4AF37;

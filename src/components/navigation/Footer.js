@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import instagram from "../../images/instagram.svg";
 import facebook from "../../images/facebook.svg";
+import { SOCIAL_LINKS } from "../../constants/links";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -23,11 +24,11 @@ const Footer = () => {
 
           <div className={styles.footerSection}>
             <h4 className={styles.footerTitle}>Follow Us</h4>
-            <div className={styles.socials}>
-              <a href="https://www.instagram.com/pieandlattespilates/" target="_blank" rel="noopener noreferrer">
+            <div className={styles.socialLinks}>
+              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <img src={instagram} alt="Instagram" className={styles.socialIcon} />
               </a>
-              <a href="https://www.facebook.com/pieandlattespilates/" target="_blank" rel="noopener noreferrer">
+              <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <img src={facebook} alt="Facebook" className={styles.socialIcon} />
               </a>
             </div>

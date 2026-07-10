@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import PageHero from '../ui/PageHero';
 import styles from './Classes.module.css';
 import heroImage from '../../images/classes_hero.png';
+import { VAGARO_BOOKING_URL } from '../../constants/links';
 
 const Classes = () => {
 
@@ -42,7 +43,7 @@ const Classes = () => {
                             <li>Ideal for injury rehab</li>
                             <li>Flexible scheduling</li>
                         </ul>
-                        <a href="https://app.squarespacescheduling.com/schedule/39d8394f/appointment/30471050/calendar/any" target="_blank" rel="noopener noreferrer">
+                        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                             <button className="btn">Book Now</button>
                         </a>
                     </div>
@@ -61,7 +62,7 @@ const Classes = () => {
                             <li>Shared goals & progress</li>
                             <li>Interactive & fun</li>
                         </ul>
-                        <a href="https://app.squarespacescheduling.com/schedule/39d8394f/appointment/30471057/calendar/any" target="_blank" rel="noopener noreferrer">
+                        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                             <button className="btn">Book Now</button>
                         </a>
                     </div>
@@ -80,7 +81,7 @@ const Classes = () => {
                             <li>Structured progression</li>
                             <li>Most affordable option</li>
                         </ul>
-                        <a href="https://app.squarespacescheduling.com/schedule/39d8394f/appointment/30469828/calendar/any" target="_blank" rel="noopener noreferrer">
+                        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                             <button className="btn">Book Now</button>
                         </a>
                     </div>

@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import { MapPin, Mail, Phone, Facebook, Instagram } from "lucide-react";
 import PageHero from "../ui/PageHero";
 import contactHero from "../../images/contact_hero.png";
+import { CONTACT_DETAILS, SOCIAL_LINKS } from "../../constants/links";
 
 const Contact = () => {
   return (
@@ -34,8 +35,8 @@ const Contact = () => {
               </div>
               <h3 className={styles.label}>Email</h3>
               <p className={styles.value}>
-                <a href="mailto:pieandlattesstudio@gmail.com" className={styles.link}>
-                  pieandlattesstudio@gmail.com
+                <a href={`mailto:${CONTACT_DETAILS.email}`} className={styles.link}>
+                  {CONTACT_DETAILS.email}
                 </a>
               </p>
             </div>
@@ -46,17 +47,17 @@ const Contact = () => {
               </div>
               <h3 className={styles.label}>Phone</h3>
               <p className={styles.value}>
-                <a href="tel:+447884788700" className={styles.link}>
-                  +44 7884 788700
+                <a href={CONTACT_DETAILS.phoneHref} className={styles.link}>
+                  {CONTACT_DETAILS.phoneDisplay}
                 </a>
               </p>
             </div>
 
             <div className={styles.socialMedia}>
-              <a href="https://www.facebook.com/PieandLattesPilatesStudio/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Facebook">
                 <Facebook className={styles.socialIcon} size={28} />
               </a>
-              <a href="https://www.instagram.com/pienadlattes_pilates_studio/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Instagram">
                 <Instagram className={styles.socialIcon} size={28} />
               </a>
             </div>

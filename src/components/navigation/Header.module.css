@@ -1,22 +1,18 @@
 .header {
   background-color: rgba(0, 0, 0, 0.1);
-  /* Subtle tint for blur visibility */
   backdrop-filter: blur(8px);
-  /* Blur effect */
   -webkit-backdrop-filter: blur(8px);
-  /* Safari support */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1rem 0;
-  transition: all 0.4s ease;
+  padding: 0.75rem 0;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
 }
 
 .header.scrolled {
   background-color: var(--color-primary);
-  /* Solid Sage Green */
   box-shadow: var(--shadow-sm);
   padding: 0.5rem 0;
 }
@@ -24,31 +20,28 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 clamp(1rem, 5vw, 4rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-md);
 }
 
 .logoLink {
   display: flex;
   align-items: center;
-  transition: all 0.4s ease;
 }
 
 .logo {
-  height: 200px;
-  /* Big transparent size */
+  height: clamp(72px, 10vw, 112px);
   width: auto;
-  transition: all 0.4s ease;
+  max-width: min(34vw, 220px);
+  transition: height 0.4s ease, filter 0.4s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-  /* Shadow for visibility on images */
 }
 
-/* Scrolled State for Logo */
 .header.scrolled .logo {
   height: 60px;
-  /* Sleek navbar size */
   filter: none;
 }
 
@@ -67,7 +60,6 @@
 
 .navList a {
   color: var(--color-white);
-  /* Always white for visibility on hero */
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 1rem;
@@ -78,12 +70,10 @@
   opacity: 0.9;
   transition: opacity 0.3s ease, color 0.3s ease;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  /* Text shadow for transparency */
 }
 
 .header.scrolled .navList a {
   color: var(--color-secondary);
-  /* Cream on solid bar */
   text-shadow: none;
 }
 
@@ -117,17 +107,16 @@
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header {
     background-color: var(--color-primary);
-    /* Always solid on mobile for readability */
     position: sticky;
     padding: 0.5rem 0;
   }
 
   .logo {
     height: 50px;
-    /* Smaller mobile logo */
+    max-width: 180px;
   }
 
   .mobileMenuBtn {
@@ -180,7 +169,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: min(80vw, 320px);
     height: 100vh;
     background-color: var(--color-primary);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);

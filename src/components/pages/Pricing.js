@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Pricing.module.css';
 import PageHero from '../ui/PageHero';
 import pricingHero from '../../images/pricing_hero.png';
+import { VAGARO_BOOKING_URL } from '../../constants/links';
 
 const Pricing = () => {
     return (
@@ -24,6 +25,8 @@ const Pricing = () => {
                         Please kindly note: Full advance payment is required for Taster Sessions and single appointments, payable at the time of booking.
                         <br />
                         Please be aware of the 24 hours cancellation policy.
+                        <br />
+                        Use our online booking page to choose a class, session, package, or gift card.
                     </p>
                 </section>
 
@@ -34,21 +37,21 @@ const Pricing = () => {
                             <div className={`${styles.card} ${styles.highlight}`}>
                                 <span className={styles.highlightLabel}>Recommended</span>
                                 <h3 className={styles.cardTitle}>Taster Session</h3>
-                                <div className={styles.price}>£33</div>
+                                <div className={styles.price}>£35</div>
                                 <p className={styles.cardDesc}>
                                     A 55-minute one-to-one class to assess your needs and introduce you to our studio.
                                 </p>
-                                <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
+                                <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                     <button className={`btn ${styles.bookBtn}`}>Book Taster</button>
                                 </a>
                             </div>
                             <div className={styles.card}>
                                 <h3 className={styles.cardTitle}>Starter Pack</h3>
-                                <div className={styles.price}>£85</div>
+                                <div className={styles.price}>£90</div>
                                 <p className={styles.cardDesc}>
                                     Includes two private sessions to kickstart your journey.
                                 </p>
-                                <a href="https://buy.stripe.com/fZe6pm4STbaWeKQbJ4" target="_blank" rel="noopener noreferrer">
+                                <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                     <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
                                 </a>
                             </div>
@@ -65,21 +68,21 @@ const Pricing = () => {
                             <div className={styles.groupGrid}>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Single Session</h3>
-                                    <div className={styles.price}>£58</div>
+                                    <div className={styles.price}>£68</div>
                                     <p className={styles.cardDesc}>
                                         Single private session tailored to your specific needs and goals.
                                     </p>
-                                    <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
+                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                         <button className={`btn ${styles.bookBtn}`}>Book Session</button>
                                     </a>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
-                                    <div className={styles.price}>£220</div>
+                                    <div className={styles.price}>£260</div>
                                     <p className={styles.cardDesc}>
                                         A pack of 4 private sessions. Save £12.
                                     </p>
-                                    <a href="https://app.acuityscheduling.com/catalog.php?owner=25295759&action=addCart&clear=1&id=1948530" target="_blank" rel="noopener noreferrer">
+                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                         <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
                                     </a>
                                 </div>
@@ -92,21 +95,21 @@ const Pricing = () => {
                             <div className={styles.groupGrid}>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Single Session</h3>
-                                    <div className={styles.price}>£71</div>
+                                    <div className={styles.price}>£80</div>
                                     <p className={styles.cardDesc}>
                                         Private session for two people. Price is total for both.
                                     </p>
-                                    <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
+                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                         <button className={`btn ${styles.bookBtn}`}>Book Duet</button>
                                     </a>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
-                                    <div className={styles.price}>£272</div>
+                                    <div className={styles.price}>£304</div>
                                     <p className={styles.cardDesc}>
-                                        A pack of 4 duet sessions. Save £12.
+                                        A pack of 4 duet sessions. Save £16.
                                     </p>
-                                    <a href="https://app.acuityscheduling.com/catalog.php?owner=25295759&action=addCart&clear=1&id=1948535" target="_blank" rel="noopener noreferrer">
+                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                         <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
                                     </a>
                                 </div>
@@ -119,21 +122,21 @@ const Pricing = () => {
                             <div className={styles.groupGrid}>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Single Class</h3>
-                                    <div className={styles.price}>£27</div>
+                                    <div className={styles.price}>£29</div>
                                     <p className={styles.cardDesc}>
                                         Small group class (max 3 people). High attention to detail.
                                     </p>
-                                    <a href="https://app.acuityscheduling.com/catalog.php?owner=25295759&action=addCart&clear=1&id=1948532" target="_blank" rel="noopener noreferrer">
+                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                         <button className={`btn ${styles.bookBtn}`}>Book Class</button>
                                     </a>
                                 </div>
                                 <div className={styles.card}>
                                     <h3 className={styles.cardTitle}>Pack of 4</h3>
-                                    <div className={styles.price}>£95</div>
+                                    <div className={styles.price}>£100</div>
                                     <p className={styles.cardDesc}>
-                                        A pack of 4 group classes. Save £13.
+                                        A pack of 4 group classes. Save £16.
                                     </p>
-                                    <a href="https://app.acuityscheduling.com/catalog.php?owner=25295759&action=addCart&clear=1&id=1948525" target="_blank" rel="noopener noreferrer">
+                                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
                                         <button className={`btn ${styles.bookBtn}`}>Buy Pack</button>
                                     </a>
                                 </div>
@@ -144,9 +147,9 @@ const Pricing = () => {
 
                 <section className={styles.bookingSection}>
                     <h2 className={styles.bookingTitle}>Ready to book your class or session?</h2>
-                    <p className={styles.bookingText}>You can view our full schedule and book your slot directly.</p>
-                    <a href="https://app.squarespacescheduling.com/schedule.php?owner=25295759" target="_blank" rel="noopener noreferrer">
-                        <button className={`btn ${styles.bookingBtn}`}>View Schedule</button>
+                    <p className={styles.bookingText}>Choose a class, private session, package, or gift card on our secure booking page.</p>
+                    <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                        <button className={`btn ${styles.bookingBtn}`}>Book Online</button>
                     </a>
                 </section>
             </div>

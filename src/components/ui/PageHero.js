@@ -9,7 +9,7 @@ const PageHero = ({ image, title, subtitle, children }) => {
                 alt={title}
                 className={styles.heroImage}
                 loading="eager"
-                fetchPriority="high"
+                fetchpriority="high"
                 decoding="sync"
             />
             <div className={styles.heroOverlay}></div>

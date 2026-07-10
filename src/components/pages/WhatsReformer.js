@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./WhatsReformer.module.css";
 import PageHero from "../ui/PageHero";
 import reformer from "../../images/pilates-machine.jpg";
+import { VAGARO_BOOKING_URL } from "../../constants/links";
 
 const WhatsReformer = () => {
   return (
@@ -58,7 +59,7 @@ const WhatsReformer = () => {
         <p className={styles.ctaText}>
           Experience the benefits for yourself. Book a Taster Session today.
         </p>
-        <a href="https://app.squarespacescheduling.com/schedule/39d8394f" target="_blank" rel="noopener noreferrer">
+        <a href={VAGARO_BOOKING_URL} target="_blank" rel="noopener noreferrer">
           <button className="btn">Book Now</button>
         </a>
       </section>
